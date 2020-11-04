@@ -6,11 +6,10 @@ categories: [demo-days]
 author: Matt Jensen
 title: Our first PSL Demo Day
 ---
-# Our first PSL Demo Day
 
 Check out the video:
 
-> youtube: https://youtu.be/AFJq4ZrwEqA
+{% include youtube.html content='https://www.youtube.com/embed/AFJq4ZrwEqA' %}
 
 We will host Demo Days every two weeks until the end of the year.
 You can see our schedule here [add link].
