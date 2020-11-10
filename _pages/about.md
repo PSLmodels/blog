@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+The [Policy Simulation Library](http://pslmodels.org) (PSL) is a collection of models and other software for public-policy decisionmaking.
+PSL is developed by independent projects that meet standards for transparency and accessibility.
+The PSL community encourages collaborative contribution and makes the tools it develops accessible to a diverse group of users.[^1]
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]:This website is powered by [fastpages](https://github.com/fastai/fastpages), a blogging platform that natively supports Jupyter notebooks in addition to other formats.
