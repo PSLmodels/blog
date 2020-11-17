@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://pslmodels.github.io/blog/announcements/2020/11/06/introducing-psl-blog.html</loc>
+<loc>https://blog.pslmodels.org/announcements/2020/11/06/introducing-psl-blog.html</loc>
 <lastmod>2020-11-06T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://pslmodels.github.io/blog/about/</loc>
+<loc>https://blog.pslmodels.org/about/</loc>
 </url>
 <url>
-<loc>https://pslmodels.github.io/blog/</loc>
+<loc>https://blog.pslmodels.org/</loc>
 </url>
 <url>
-<loc>https://pslmodels.github.io/blog/search/</loc>
+<loc>https://blog.pslmodels.org/search/</loc>
 </url>
 <url>
-<loc>https://pslmodels.github.io/blog/categories/</loc>
+<loc>https://blog.pslmodels.org/categories/</loc>
 </url>
 </urlset>

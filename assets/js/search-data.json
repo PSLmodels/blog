@@ -4,7 +4,7 @@
         "post0": {
             "title": "Introducing the PSL Blog",
             "content": "Our mission at the Policy Simulation Library is to improve public policy by opening up models and data preparation routines for policy analysis. To support and showcase our diverse community of users and developers, we engage across several mediums: a monthly newsletter, a Q&amp;A forum, (now-virtual) meetups, our Twitter feed, our YouTube channel, documentation for models in our catalog, and of course, issues and pull requests on GitHub. . Today, we’re adding a new medium: the PSL Blog. We’ll use this space to share major updates on our catalog, provide tutorials, and summarize events or papers that involve our models. . If you’d like to share your work on our blog, or to suggest content, drop me a line. To follow along, add the PSL blog’s RSS feed or subscribe to our newsletter. . Happy reading, . Max Ghenis . Editor, PSL Blog .",
-            "url": "https://pslmodels.github.io/blog/announcements/2020/11/06/introducing-psl-blog.html",
+            "url": "https://blog.pslmodels.org/announcements/2020/11/06/introducing-psl-blog.html",
             "relUrl": "/announcements/2020/11/06/introducing-psl-blog.html",
             "date": " • Nov 6, 2020"
         }
@@ -19,7 +19,7 @@
       ,"page1": {
           "title": "About",
           "content": "The Policy Simulation Library (PSL) is a collection of models and other software for public-policy decisionmaking. PSL is developed by independent projects that meet standards for transparency and accessibility. The PSL community encourages collaborative contribution and makes the tools it develops accessible to a diverse group of users.1 . This website is powered by fastpages, a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://pslmodels.github.io/blog/about/",
+          "url": "https://blog.pslmodels.org/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -51,7 +51,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://pslmodels.github.io/blog/robots.txt",
+          "url": "https://blog.pslmodels.org/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
