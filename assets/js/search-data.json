@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Our first PSL Demo Day",
+            "content": "Check out the video: . We will host Demo Days every two weeks until the end of the year. You can see our schedule on our events page. . . Show notes: . I demonstrate how to build policy reform files using the Tax-Brain webapp on Compute Studio. (Useful links below). This is an introductory lesson that ends with a cliffhanger. We don’t run the model. But we do generate an individual income and payroll tax reform file that is compatible with a range of policy simulation models and analytic tools, some designed for policy decision makers, others for taxpayers and benefits recipients interested in assessing their own circumstances. . Beyond individual and payroll tax analysis, the reform file can be used with models that assess pass-through and corporate taxation of businesses, as well as a variety of income benefit programs. A wide range of use cases will occupy future events. . Resources: . Demo C/S simulation . IRS Form 1040 . PSL Catalog . PSL Events .",
+            "url": "https://blog.pslmodels.org/demo-days/2020/11/18/our-first-demo-day.html",
+            "relUrl": "/demo-days/2020/11/18/our-first-demo-day.html",
+            "date": " • Nov 18, 2020"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Introducing the PSL Blog",
             "content": "Our mission at the Policy Simulation Library is to improve public policy by opening up models and data preparation routines for policy analysis. To support and showcase our diverse community of users and developers, we engage across several mediums: a monthly newsletter, a Q&amp;A forum, (now-virtual) meetups, our Twitter feed, our YouTube channel, documentation for models in our catalog, and of course, issues and pull requests on GitHub. . Today, we’re adding a new medium: the PSL Blog. We’ll use this space to share major updates on our catalog, provide tutorials, and summarize events or papers that involve our models. . If you’d like to share your work on our blog, or to suggest content, drop me a line. To follow along, add the PSL blog’s RSS feed or subscribe to our newsletter. . Happy reading, . Max Ghenis . Editor, PSL Blog .",
             "url": "https://blog.pslmodels.org/announcements/2020/11/06/introducing-psl-blog.html",
