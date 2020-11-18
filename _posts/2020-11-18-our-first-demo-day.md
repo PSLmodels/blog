@@ -12,7 +12,7 @@ Check out the video:
 {% include youtube.html content='https://www.youtube.com/embed/AFJq4ZrwEqA' %}
 
 We will host Demo Days every two weeks until the end of the year.
-You can see our schedule [here](https://www.pslmodels.org/events.html).
+You can see our schedule on [our events page](https://www.pslmodels.org/events.html).
 
 ------
 
