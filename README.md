@@ -18,8 +18,8 @@ _powered by [fastpages](https://github.com/fastai/fastpages)_
 
 - [Writing Blogs With Markdown](https://github.com/fastai/fastpages#writing-blog-posts-with-markdown)
 
-- [Writing Blog Posts With Word](https://github.com/fastai/fastpages#writing-blog-posts-with-microsoft-word)
-
-- [(Optional) Preview Your Blog Locally](_fastpages_docs/DEVELOPMENT.md)
+Please [preview the blog locally](_fastpages_docs/DEVELOPMENT.md) using `make server` from the root directory after drafting your post. Include a screenshot of the blog in your PR.
 
 Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
+
+*Questions? Contact Max Ghenis (mghenis@gmail.com).*
