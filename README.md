@@ -27,13 +27,14 @@ Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/
 
 ## Post formats
 
-Please follow this guidance for post types.
+Please follow the below guidance for each post type.
 
 ### Demo Days recaps
 
-* Tag the post as `demo-days`
-* Show the video at the top of the post
-* Include other materials, including code and/or Compute Studio links
+* Tag the post as `demo-days`.
+* Show the video at the top of the post.
+* Describe the motivation for the demo and what you demonstrated.
+* Link materials shown in the demo, including code and/or Compute Studio simulations.
 
 See [PR #10](https://github.com/PSLmodels/blog/pull/10) as an example.
 
