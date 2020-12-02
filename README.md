@@ -25,6 +25,11 @@ In both cases, please take the following steps:
 
 Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
 
+## Technical guide
+
+* Use lowercase and dashes for all tags.
+* Make each new sentence its own line (for easier code review).
+
 ## Post formats
 
 Please follow the below guidance for each post type.
