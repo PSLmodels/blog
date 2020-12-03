@@ -37,6 +37,7 @@ Please follow the below guidance for each post type.
 ### Demo Days recaps
 
 * Tag the post as `demo-days`.
+* Title the post `Demo Days {#}: {title}`.
 * Show the video at the top of the post.
 * Describe the motivation for the demo and what you demonstrated.
 * Link materials shown in the demo, including code and/or Compute Studio simulations.
@@ -48,6 +49,7 @@ See [PR #10](https://github.com/PSLmodels/blog/pull/10) as an example.
 * Focus on PSL software and models; reserve policy analysis for think tank and op-ed reports.
 * Write with a neutral tone.
 * Favor active over passive voice.
+* Favor `Mmm DD`, `Mmm DD, YYYY`, or `YYYY-MM-DD` date formats over `MM/DD` and `MM/DD/YYYY`, which can be misinterpreted outside the US.
 * Avoid "click here" links; for better [accessibility](https://webaccess.berkeley.edu/resources/tips/web-accessibility#accessible-links) and [SEO](https://www.lamar.edu/web-communication/resources/avoid-using-click-here.html), provide descriptive links.
 
 *Questions? Contact Max Ghenis (mghenis@gmail.com).*
