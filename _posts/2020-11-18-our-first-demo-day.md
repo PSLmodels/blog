@@ -4,7 +4,7 @@ layout: post
 description: The first in Policy Simulation Library's new live demo series describes specifying tax reforms.
 categories: [demo-days]
 author: Matt Jensen
-title: Our first PSL Demo Day
+title: "Demo Day 1: Building a policy reform file"
 ---
 
 Check out the video:
