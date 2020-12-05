@@ -27,6 +27,7 @@ Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/
 
 ## Technical guide
 
+* Make URLs concise but descriptive of the post.
 * Use lowercase and dashes for all tags.
 * Make each new sentence its own line (for easier code review).
 
@@ -49,6 +50,7 @@ See [PR #10](https://github.com/PSLmodels/blog/pull/10) as an example.
 * Focus on PSL software and models; reserve policy analysis for think tank and op-ed reports.
 * Write with a neutral tone.
 * Favor active over passive voice.
+* Capitalize post titles.
 * Favor `Mmm DD`, `Mmm DD, YYYY`, or `YYYY-MM-DD` date formats over `MM/DD` and `MM/DD/YYYY`, which can be misinterpreted outside the US.
 * Avoid "click here" links; for better [accessibility](https://webaccess.berkeley.edu/resources/tips/web-accessibility#accessible-links) and [SEO](https://www.lamar.edu/web-communication/resources/avoid-using-click-here.html), provide descriptive links.
 

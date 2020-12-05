@@ -11,13 +11,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Computing the impact of taxes on business investment incentives under alternative policy scenarios." />
 <meta property="og:description" content="Computing the impact of taxes on business investment incentives under alternative policy scenarios." />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-days/cost-of-capital-calculator/business-taxation/corporate-income-tax/2020/12/03/ccc.html" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-days/cost-of-capital-calculator/business-taxation/corporate-income-tax/2020/12/03/ccc.html" />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-3-cost-of-capital-calculator" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-3-cost-of-capital-calculator" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-03T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-days/cost-of-capital-calculator/business-taxation/corporate-income-tax/2020/12/03/ccc.html","@type":"BlogPosting","headline":"Demo Day 3: Cost-of-Capital-Calculator Web Application","dateModified":"2020-12-03T00:00:00-06:00","datePublished":"2020-12-03T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-days/cost-of-capital-calculator/business-taxation/corporate-income-tax/2020/12/03/ccc.html"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"Computing the impact of taxes on business investment incentives under alternative policy scenarios.","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-3-cost-of-capital-calculator","@type":"BlogPosting","headline":"Demo Day 3: Cost-of-Capital-Calculator Web Application","dateModified":"2020-12-03T00:00:00-06:00","datePublished":"2020-12-03T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-3-cost-of-capital-calculator"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"Computing the impact of taxes on business investment incentives under alternative policy scenarios.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -113,15 +113,27 @@ window.onload = wrap_img;
 
 <hr>
 
-<p>In the PSL Demo Day video linked above, I demonstrate how to use the Cost-of-Capital-Calculator (CCC) web application on <a href="https://compute.studio">Compute-Studio</a>.  CCC computes various measures of the impact of the tax system on business investment.  These include the <a href="http://piketty.pse.ens.fr/files/HallJorgenson67.pdf">Hall-Jorgenson cost of capital</a>, <a href="http://webarchive.urban.org/UploadedPDF/1000538.pdf">marginal effective tax rates</a>, and effective average tax rates (following the methodology of <a href="https://www.ifs.org.uk/wps/wp9816.pdf">Devereux and Griffith (1999)</a>).</p>
+<p>In the PSL Demo Day video linked above, I demonstrate how to use the Cost-of-Capital-Calculator (CCC) web application on <a href="https://compute.studio">Compute-Studio</a>.
+CCC computes various measures of the impact of the tax system on business investment.
+These include the <a href="http://piketty.pse.ens.fr/files/HallJorgenson67.pdf">Hall-Jorgenson cost of capital</a>, <a href="http://webarchive.urban.org/UploadedPDF/1000538.pdf">marginal effective tax rates</a>, and effective average tax rates (following the methodology of <a href="https://www.ifs.org.uk/wps/wp9816.pdf">Devereux and Griffith (1999)</a>).</p>
 
-<p>I begin by illustrating the various parameters available for the user to manipulate.  These include parameters of the business and individual income tax systems, as well as parameters representing economic assumptions (e.g., inflation rates and nominal interest rates) and parameters dictating financial and accounting policy (e.g., the fraction of financing using debt).  Note that all default values for tax policy parameters represent the “baseline policy”, which is defined as the current law policy in the year being analyzed (which itself is a parameter the user can change).  Other parameters are estimated using historical data following the methodology of <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/reports/49817-taxingcapitalincome0.pdf">CBO (2014)</a>.</p>
+<p>I begin by illustrating the various parameters available for the user to manipulate.
+These include parameters of the business and individual income tax systems, as well as parameters representing economic assumptions (e.g., inflation rates and nominal interest rates) and parameters dictating financial and accounting policy (e.g., the fraction of financing using debt).
+Note that all default values for tax policy parameters represent the “baseline policy”, which is defined as the current law policy in the year being analyzed (which itself is a parameter the user can change).
+Other parameters are estimated using historical data following the methodology of <a href="https://www.cbo.gov/sites/default/files/113th-congress-2013-2014/reports/49817-taxingcapitalincome0.pdf">CBO (2014)</a>.</p>
 
-<p>Next, I change a few parameters and run the model.  In this example, I move the corporate income tax rate up to 28% and lower bonus depreciation for assets with depreciable lives of 20 years or less to 50%.</p>
+<p>Next, I change a few parameters and run the model.
+In this example, I move the corporate income tax rate up to 28% and lower bonus depreciation for assets with depreciable lives of 20 years or less to 50%.</p>
 
-<p>Finally, I discuss how to interpret output.  The web app returns a table and three figures summarizing marginal effective total tax rates on new investments.  This selection of output helps give one a sense of the the overall changes, as well as effects across asset types, industries, and type of financing.  For the full model output, one can click on “Download Results”.  Doing so will download four CSV files contain several measures of the impact of the tax system on investment for very fine asset and industry categories.  Users can take these files and create tables and visualizations relevant to their own use case.</p>
+<p>Finally, I discuss how to interpret output.
+The web app returns a table and three figures summarizing marginal effective total tax rates on new investments.
+This selection of output helps give one a sense of the the overall changes, as well as effects across asset types, industries, and type of financing.
+For the full model output, one can click on “Download Results”.
+Doing so will download four CSV files contain several measures of the impact of the tax system on investment for very fine asset and industry categories.
+Users can take these files and create tables and visualizations relevant to their own use case.</p>
 
-<p>Please take the model for a spin and simulate your own reform.  If you have questions, comments, or suggestions, please let me know on the <a href="http://discourse.pslmodels.org">PSL Discourse</a> (non-technical questions) or by opening an issue in the <a href="https://github.com/PSLmodels/Cost-of-Capital-Calculator/issues">CCC GitHub repository</a> (technical questions).</p>
+<p>Please take the model for a spin and simulate your own reform.
+If you have questions, comments, or suggestions, please let me know on the <a href="http://discourse.pslmodels.org">PSL Discourse</a> (non-technical questions) or by opening an issue in the <a href="https://github.com/PSLmodels/Cost-of-Capital-Calculator/issues">CCC GitHub repository</a> (technical questions).</p>
 
 <p>Resources:</p>
 <ul>
@@ -131,7 +143,7 @@ window.onload = wrap_img;
   <li><a href="https://github.com/PSLmodels/Cost-of-Capital-Calculator/">Cost-of-Capital-Calculator GitHub repository</a></li>
 </ul>
 
-  </div><a class="u-url" href="/demo-days/cost-of-capital-calculator/business-taxation/corporate-income-tax/2020/12/03/ccc.html" hidden></a>
+  </div><a class="u-url" href="/demo-day-3-cost-of-capital-calculator" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
