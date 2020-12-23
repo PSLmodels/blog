@@ -11,8 +11,8 @@ title: "Demo Day 4: Tax-Brain"
 
  ------
 
- For this PSL demo-day I showed how to use the Tax-Brain web-application,
- hosted on Compute-Studio, to analyze proposed individual income tax policies.
+ For this PSL demo-day I showed how to use the [Tax-Brain web-application](https://www.compute.studio/PSLmodels/Tax-Brain/),
+ hosted on [Compute Studio](http://compute.studio), to analyze proposed individual income tax policies.
 Tax-Brain integrates the [Tax-Calculator](https://pslmodels.github.io/Tax-Calculator/)
 and [Behavioral-Responses](https://github.com/PSLmodels/Behavioral-Responses#readme)
 models to make running both static and dynamic analyses of the US federal income
@@ -25,7 +25,7 @@ my knowledge does not reflect any proposals currently up for debate, included
 changes to the income and payroll tax rates, bringing back personal exemptions,
 modifying the standard deduction, and implementing a universal basic income.
 
-While the model ran I explained how Tax-Brain validated all of the user inputs,
+While the model ran, I explained how Tax-Brain validated all of the user inputs,
 the data behind the model, and how the final tax liability projections are
 determined. We concluded by looking through the variety of tables and graphs
 Tax-Brain produces and how they can easily be shared with others.
