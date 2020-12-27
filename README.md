@@ -21,6 +21,7 @@ The `PSL blog` accepts posts as Jupyter notebooks or Markdown documents:
 In both cases, please take the following steps:
 1. Follow the Fastpages guides on writing blogs with [Jupyter](https://github.com/fastai/fastpages#writing-blog-posts-with-jupyter) and [Markdown](https://github.com/fastai/fastpages#writing-blog-posts-with-markdown), and include the required "front matter" with metadata.
 2. [Preview the blog locally](_fastpages_docs/DEVELOPMENT.md) using the `make server` command from the root directory after drafting your post.
+You'll need [Docker](https://docs.docker.com/get-docker/) installed on your machine to run the command.
 3. Include a screenshot of the blog post in your PR.
 
 Please use the [nbdev & blogging channel](https://forums.fast.ai/c/fastai-users/nbdev/48) in the fastai forums for any questions or feature requests.
