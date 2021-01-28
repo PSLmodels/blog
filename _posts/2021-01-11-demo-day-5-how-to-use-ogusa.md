@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 description: How to use OG-USA macroeconomic model of U.S. fiscal policy
 categories: [demo-days, OG-USA, Tax-Calculator, open-source, policy-simulation-library, compute-studio]
@@ -19,7 +19,7 @@ In this PSL Demo Day, I demonstrate how to use the open source [`OG-USA`](https:
 
 * [A brief note about value of the PSL community](#brief-note-about-the-value-of-the-PSL-community)
 * [Description of the OG-USA model](#description-of-og-usa-model)
-* [Using OG-USA on Compute.Studio](#using-og-usa-on-compute-studio)
+* [Using OG-USA on Compute Studio](#using-og-usa-on-compute-studio)
 
 ## Brief note about the value of the PSL community
 
