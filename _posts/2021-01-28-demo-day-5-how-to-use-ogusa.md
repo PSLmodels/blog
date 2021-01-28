@@ -7,15 +7,15 @@ author: Richard W. Evans
 title: "Demo Day 5: How to Use OG-USA Macroeconomic Model of U.S. Fiscal Policy"
 ---
 
- ![](../images/OG-USA_logo_long.png)
+![](../images/OG-USA_logo_long.png)
 
- ------
+------
 
- {% include youtube.html content='https://youtu.be/EUS6QG6UjZY' %}
+{% include youtube.html content='https://youtu.be/EUS6QG6UjZY' %}
 
- ------
+------
 
-In this PSL Demo Day, I demonstrate how to use the open source [`OG-USA`](https://github.com/PSLmodels/OG-USA) macroeconomic model of U.S. fiscal policy. [Jason DeBacker](https://www.jasondebacker.com/) and I ([Richard Evans](https://sites.google.com/site/rickecon/)) have been the core maintainers of this project and repository for the last six years. This demo is organized into the following sections.
+In this PSL Demo Day, I demonstrate how to use the open source [`OG-USA`](https://github.com/PSLmodels/OG-USA) macroeconomic model of U.S. fiscal policy. [Jason DeBacker](https://www.jasondebacker.com/) and I ([Richard Evans](https://sites.google.com/site/rickecon/)) have been the core maintainers of this project and repository for the last six years. This demo is organized into the following sections. The [YouTube webinar](https://youtu.be/EUS6QG6UjZY) linked above took place on January 11, 2021.
 
 * [A brief note about value of the PSL community](#brief-note-about-the-value-of-the-PSL-community)
 * [Description of the OG-USA model](#description-of-og-usa-model)
@@ -55,6 +55,7 @@ The benefits of the Compute Studio web application are that running the `OG-USA`
 
 ## Resources
 
+* [PSL Demo Day YouTube webinar: "How to use `OG-USA`"](https://youtu.be/EUS6QG6UjZY)
 * [`OG-USA` on Compute Studio](https://compute.studio/PSLmodels/OG-USA/)
 * [Simulation from the demonstration](https://compute.studio/PSLmodels/OG-USA/206/)
 * [`OG-USA` GitHub repo](https://github.com/PSLmodels/OG-USA)
