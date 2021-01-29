@@ -11,7 +11,7 @@ title: "Demo Day 6: Running the scf and microdf Python packages in Google Colab"
 
  ------
 
- For yesterday's PSL Demo Day, I showed how to use the `scf` and `microdf` PSL Python packages from the [Google Colab](http://colab.research.google.com) web-based Jupyter notebook interface.
+ For Monday's PSL Demo Day, I showed how to use the `scf` and `microdf` PSL Python packages from the [Google Colab](http://colab.research.google.com) web-based Jupyter notebook interface.
 
  The `scf` package extracts data from the Federal Reserve's Survey of Consumer Finances, the canonical source of US wealth microdata.
  `scf` has a single function: `load(years, columns)`, which then returns a `pandas` `DataFrame` with the specified column(s), each record's survey weight, and the year (when multiple years are requested).
