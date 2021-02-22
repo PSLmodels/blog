@@ -7,7 +7,7 @@ author: Jason DeBacker
 title: "Demo Day 7: How to contribute to PSL projects"
 ---
 
- {% include youtube.html content='https://youtu.be/Zlws_gC9HeY' %}
+ {% include youtube.html content='https://youtu.be/LZUPYJ0RwJM' %}
 
  ------
 
