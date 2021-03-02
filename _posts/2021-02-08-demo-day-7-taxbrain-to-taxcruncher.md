@@ -4,7 +4,7 @@ layout: post
 description: Move reforms between models with the Compute.Studio API.
 categories: [demo-days]
 author: Matt Jensen
-title: "Demo Days 7: Move Policy Reform Files from Tax-Brain to Tax-Cruncher"
+title: "Demo Day 7: Move Policy Reform Files from Tax-Brain to Tax-Cruncher"
 ---
 
 Check out the video:
