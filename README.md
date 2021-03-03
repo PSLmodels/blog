@@ -39,7 +39,7 @@ Please follow the below guidance for each post type.
 ### Demo Days recaps
 
 * Tag the post as `demo-days`.
-* Title the post `Demo Day {#}: {title}`.
+* Title the post `Demo Day: {title}`.
 * Show the video at the top of the post.
 * Describe the motivation for the demo and what you demonstrated.
 * Link materials shown in the demo, including code and/or Compute Studio simulations.
