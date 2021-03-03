@@ -4,7 +4,7 @@ layout: post
 description: How to use OG-USA macroeconomic model of U.S. fiscal policy
 categories: [demo-days, OG-USA, Tax-Calculator, open-source, policy-simulation-library, compute-studio]
 author: Richard W. Evans
-title: "Demo Day 5: How to Use OG-USA Macroeconomic Model of U.S. Fiscal Policy"
+title: "Demo Day: How to Use OG-USA Macroeconomic Model of U.S. Fiscal Policy"
 ---
 
 ![](../images/OG-USA_logo_long.png)

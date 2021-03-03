@@ -4,7 +4,7 @@ layout: post
 description: How to use the Tax-Brain web-app
 categories: [demo-days, individual-income-tax, tax-brain]
 author: Anderson Frailey
-title: "Demo Day 4: Tax-Brain"
+title: "Demo Day: Tax-Brain"
 ---
 
  {% include youtube.html content='https://youtu.be/Zc_XEErfO5E' %}

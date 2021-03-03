@@ -4,7 +4,7 @@ layout: post
 description: How to calculate a taxpayer's liabilities under current law and under a policy reform.
 categories: [demo-days, individual-income-tax, tax-cruncher]
 author: Peter Metz
-title: "Demo Day 2: Tax-Cruncher"
+title: "Demo Day: Tax-Cruncher"
 ---
 
 {% include youtube.html content='https://youtu.be/d4T-DOxm2QQ' %}

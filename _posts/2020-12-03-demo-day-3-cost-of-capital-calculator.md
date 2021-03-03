@@ -4,7 +4,7 @@
  description: Computing the impact of taxes on business investment incentives under alternative policy scenarios.
  categories: [demo-days, cost-of-capital-calculator, business-taxation, corporate-income-tax]
  author: Jason DeBacker
- title: "Demo Day 3: Cost-of-Capital-Calculator Web Application"
+ title: "Demo Day: Cost-of-Capital-Calculator Web Application"
 ---
 
  {% include youtube.html content='https://youtu.be/KLIuFbYPpNA' %}

@@ -4,7 +4,7 @@ layout: post
 description: Analyzing US wealth data in a web-based Python notebook
 categories: [demo-days, microdf, scf]
 author: Max Ghenis
-title: "Demo Day 6: Running the scf and microdf Python packages in Google Colab"
+title: "Demo Day: Running the scf and microdf Python packages in Google Colab"
 ---
 
  {% include youtube.html content='https://youtu.be/Zlws_gC9HeY' %}
