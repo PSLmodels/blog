@@ -4,7 +4,7 @@ layout: post
 description: How to contribute to PSL projects
 categories: [demo-days, PSL, git, github]
 author: Jason DeBacker
-title: "Demo Day 8: How to contribute to PSL projects"
+title: "Demo Day: How to contribute to PSL projects"
 ---
 
  {% include youtube.html content='https://youtu.be/LZUPYJ0RwJM' %}
