@@ -12,7 +12,7 @@ title: "Demo Day 8: How to contribute to PSL projects"
  ------
 
  In the most recent PSL Demo Day, I illustrate how to contribute to PSL projects.
- The open source nature of projects in the PSL catalog allow anyone to contribute.
+ The open source nature of projects in the PSL catalog allows anyone to contribute.
  The modularity of the code, coupled with robust testing, means that one can bite off small pieces that help improve the models and remain confident those changes work as expected.
 
 To begin the process of finding where to contribute to PSL projects, I advise looking through the [PSL GitHub Organization](https://github.com/PSLmodels) to see what projects interest you.
