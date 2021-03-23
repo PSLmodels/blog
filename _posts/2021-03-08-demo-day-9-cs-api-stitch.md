@@ -42,5 +42,5 @@ Also, this is an open source project and has lots of room for improvement. If yo
 Resources:
 
 - [PSL Stitch](https://stitch.hankdoupe.com)
-- [Source code](https://pslmodels.org/events.html)
+- [Source code](https://github.com/hdoupe/psl-stitch)
 - [Compute Studio API Docs](https://docs.compute.studio/api/guide.html)
