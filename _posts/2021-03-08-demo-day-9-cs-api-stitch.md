@@ -27,11 +27,13 @@ One of the cool things about this app is that it uses [ParamTools](https://param
 
 After clicking run, three simulations will be created on Compute Studio and the app will update as soon as the simulations have finished:
 
-TODO: add image
+![Getting started](https://user-images.githubusercontent.com/9206065/112211937-ca75db00-8bf2-11eb-856f-41c46e7e8ec5.png)
+
+![CS Simulations](https://user-images.githubusercontent.com/9206065/112211931-c9dd4480-8bf2-11eb-83d8-678fd6d80dd9.png)
 
 Once they are done, the simulations are best viewed and interacted with on Compute Studio, but you can still inspect the JSON response from the Compute Studio API:
 
-TODO: add image
+![Simulation Complete](https://user-images.githubusercontent.com/9206065/112211930-c944ae00-8bf2-11eb-87dc-949ff3007229.png)
 
 I created this app to show that it's possible to build apps on top of the Compute Studio API. I think PSL Stitch is a neat example of how to do this, but I am even more excited to see what others build next.
 
