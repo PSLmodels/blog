@@ -2,8 +2,8 @@
 toc: true
 layout: post
 description: How to use Tax-Calculator to produce stacked revenue estimates
-categories: [demo-days, individual-income-tax   tax-brain, tax-calculator]
-author: Jason DEBacker
+categories: [demo-days, individual-income-tax, tax-brain, tax-calculator]
+author: Jason DeBacker
 title: "Demo Day: Producing stacked revenue estimates with the Tax-Calculator Python API"
 ---
 
@@ -20,8 +20,8 @@ In fact, after some initial setup, this can be done with just 12 lines of code (
 The Google Colab notebook that illustrates this approach can be found [at this link](https://colab.research.google.com/drive/1P-m61lWbPpb_ih42vQKrD2zi9Bpe16BM?usp=sharing), but here I'll walk through the four steps that are involved:
 
 1. *Divide up the full proposal into strings of JSON text that contain each provision you want to analyze*.
-My example breaks up the [Biden 2020 campaign proposal](https://github.com/PSLmodels/examples/blob/main/psl_examples/taxcalc/Biden2020.json) into seven provisions, but this is illustrative and you can make more or less provisions depending  on the detail you would like to see.
-2. *Create a dictionary that contains, as it's values, the JSON strings*.
+My example breaks up the [Biden 2020 campaign proposal](https://github.com/PSLmodels/examples/blob/main/psl_examples/taxcalc/Biden2020.json) into seven provisions, but this is illustrative and you can make more or less provisions depending on the detail you would like to see.
+2. *Create a dictionary that contains, as its values, the JSON strings*.
 A couple notes on this.
 First, the dictionary keys should be descriptive of the provisions as they will become the labels for each provision in the final table of revenue estimates we produce.
 Second, order matters here.
@@ -50,7 +50,7 @@ For example, within the for-loops, the [Behavioral-Responses](https://github.com
 Or one could store the individual income tax and payroll tax revenue impacts separately (rather than return the combined values as in the example notebook).
 Additional outputs (even the full set of microdata after each provision is applied) can be stored for even more analysis.
 
-In the future, look for [Tax-Brain](https://github.com/PSLmodels/Tax-Brain) to add stacked revenue estimates to it's capabilities.
+In the future, look for [Tax-Brain](https://github.com/PSLmodels/Tax-Brain) to add stacked revenue estimates to its capabilities.
 It'll still be important for users to carve up their full list of policy changes into sets of provisions as we did in Steps 1 and 2 above, but Tax-Brain will then take care of the rest behind the scenes.
 
 
