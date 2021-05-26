@@ -7,7 +7,7 @@ author: Jason DeBacker
 title: "Demo Day: Keeping Jupyter Book documentation up to date with GH Actions"
 ---
 
-{% include youtube.html content='https://youtu.be/O79H2Z8CeGc' %}
+{% include youtube.html content='https://youtu.be/rEG5vGMkDsg' %}
 
 ---
 
@@ -66,10 +66,12 @@ jobs:
 To use this in your repo, you'll just need to change a few settings such as the name of the environment and perhaps the Python version and path to the book source files.
 Note that in the above `yml` file `sphinxcontrib-bibtex` is pinned.
 You maybe able to unpin this, but OG-USA needed this pin for documentation to compile property due to changes in the `jupyter-book` and `sphinxcontrib-bibtex` packages.
-1. An action that builds and deploys the Jupyter Book to [GH Pages](https://pages.github.com).
+
+2. An action that builds and deploys the Jupyter Book to [GH Pages](https://pages.github.com).
 The OG-USA project uses the [deploy action from James Ives](https://github.com/JamesIves/github-pages-deploy-action) in [this action](https://github.com/PSLmodels/OG-USA/blob/master/.github/workflows/deploy_docs.yml).
 This is something that you will want to run when PRs are merged into your main branch so that the documentation is kept up-to-date with the project.
-3. To modify this action for your repo, you'll need to change the repo name, the environment name, and potentially the Python version and path to the book source files.
+To modify this action for your repo, you'll need to change the repo name, the environment name, and potentially the Python version and path to the book source files.
+
 *Step 2*: Once the action in (2) above is run, your compiled Jupyter Book docs will be pushed to a `gh-pages` branch in your repository.
 At this point, you should be able to see your docs at the url `https://GH_org_name.github.io/Repo_name`.  But it probably won't look very good until you complete this next step.
 To have your Jupyter Book render on the web as you see it on your machine, you will want to push and merge an empty file with the name `.nojekyll` into your repo's `gh-pages` branch.
