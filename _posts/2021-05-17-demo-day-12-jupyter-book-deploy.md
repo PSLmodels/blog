@@ -27,9 +27,9 @@ I start from the assumption that you have the source files to build your Jupyter
 For version control purposes and to keep your repo trim, you generally don't want to check the built documentation files to this branch (tip: consider adding the folder these files will go to (e.g., `/_build` to your `.gitignore`).
 When these files are in place and you can successfully build your book locally, it's time for the first step.
 
-*Step1*: Add two GH Actions to your project's workflow:
+*Step 1*: Add two GH Actions to your project's workflow:
 1.  An action to check that your documentation files build without an error.
-I like to have this run this on each push to a PR.
+I like to run this on each push to a PR.
 The action won't hang on warnings, but will fail if your Jupyter Book doesn't build at all.
 An example of this action from the OG-USA repo is [here](https://github.com/PSLmodels/OG-USA/blob/master/.github/workflows/docs_check.yml):
 ```
