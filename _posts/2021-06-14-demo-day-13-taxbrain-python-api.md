@@ -9,7 +9,7 @@ title: "Demo Day: Using the TaxBrain Python API"
 
 ------
 
-{% include youtube.html content='https://youtu.be/EUS6QG6UjZY' %}
+{% include youtube.html content='https://youtu.be/HXN2TrOvXn0' %}
 
 ------
 
@@ -22,7 +22,7 @@ revenue impacts of proposed tax policies. The Jupyter Notebook from the presenta
 can be found [here](https://gist.github.com/andersonfrailey/bb8ac6db609bf0146ef23d1d35d32334).
 
 TaxBrain's Python API allows you to run a full analysis of income tax policies
-in just four lines of code:
+in just three lines of code:
 
 ```python
 from taxbrain import TaxBrain
@@ -62,12 +62,18 @@ budget window.
 
 The last feature I showed was TaxBrain's automated reports. TaxBrain uses saved
 results and an included report template to write a report summarizing the findings
-of your simulation. The reports include tables and figures similar to what you may find in similar write ups by the Joint Committee on Taxation or Tax Policy Center,
+of your simulation. The reports include tables and figures similar to what you
+may find in similar write ups by the Joint Committee on Taxation or Tax Policy Center,
 and all you need is one line of code:
 
 ```python
 report(tb, name='Biden Proposal', outdir='biden', author='Anderson Frailey')
 ```
+
+The above code will save a PDF copy of the report in a directory called `biden`
+along with PNG files for each of the graphs created and the raw Markdown text
+used for the report, which you can then edit as needed if you would like to add
+content to the report that is not already included.
 
 There are of course downsides to using TaxBrain instead of Tax-Calculator directly.
 Specifically, it's more difficult, and sometimes impossible, to perform custom 
