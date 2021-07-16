@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Demo Day: Using the TaxBrain Python API | PSL blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Demo Day: Using the TaxBrain Python API" />
+<meta name="author" content="Anderson Frailey" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to use the TaxBrain python API" />
+<meta property="og:description" content="How to use the TaxBrain python API" />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-13-taxbrain-python-api" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-13-taxbrain-python-api" />
+<meta property="og:site_name" content="PSL blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-14T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"How to use the TaxBrain python API","url":"https://blog.pslmodels.org/demo-day-13-taxbrain-python-api","@type":"BlogPosting","headline":"Demo Day: Using the TaxBrain Python API","dateModified":"2021-06-14T00:00:00-05:00","datePublished":"2021-06-14T00:00:00-05:00","author":{"@type":"Person","name":"Anderson Frailey"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-13-taxbrain-python-api"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">PSL blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Using the TaxBrain Python API</h1><p class="page-description">How to use the TaxBrain python API</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-14T00:00:00-05:00" itemprop="datePublished">
+        Jun 14, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Anderson Frailey</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#demo-days">demo-days</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#individual-income-tax">individual-income-tax</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#tax-brain">tax-brain</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#tax-calculator">tax-calculator</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><hr>
+
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HXN2TrOvXn0" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<hr>
+
+<p>The TaxBrain project was primarily created to serve as the backend of the <a href="https://www.compute.studio/PSLmodels/Tax-Brain/">Tax-Brain web-application</a>.
+But at its core, TaxBrain is a Python package that greatly simplifies tax policy analysis.
+For this PSL Demo-Day, I demonstrated TaxBrain’s capabilities as a standalone package, and how to use it to produce high-level summaries of the revenue impacts of proposed tax policies.
+The Jupyter Notebook from the presentation can be found <a href="https://gist.github.com/andersonfrailey/bb8ac6db609bf0146ef23d1d35d32334">here</a>.</p>
+
+<p>TaxBrain’s Python API allows you to run a full analysis of income tax policies in just three lines of code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">taxbrain</span> <span class="kn">import</span> <span class="n">TaxBrain</span>
+
+<span class="n">tb</span> <span class="o">=</span> <span class="n">TaxBrain</span><span class="p">(</span><span class="n">START_YEAR</span><span class="p">,</span> <span class="n">END_YEAR</span><span class="p">,</span> <span class="n">use_cps</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">reform</span><span class="o">=</span><span class="n">REFORM_POLICY</span><span class="p">)</span>
+<span class="n">tb</span><span class="p">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">START_YEAR</code> and <code class="language-plaintext highlighter-rouge">END_YEAR</code> are the first and last years, respectively, of the analysis; <code class="language-plaintext highlighter-rouge">use_cps</code> is a boolean indicator that you want to use the CPS-based microdata file prepared for use with Tax-Calculator; and <code class="language-plaintext highlighter-rouge">REFORM_POLICY</code> is either a JSON file or Python dictionary that specifies a reform suitable for Tax-Calculator.
+The forthcoming release of TaxBrain will also include a feature that allows you to perform a stacked revenue analysis as well.
+The inspiration for this feature was presented by Jason DeBacker in a <a href="http://blog.pslmodels.org/demo-day-11-stacked-revenue-estimates">previous demo-day</a>.</p>
+
+<p>Once TaxBrain has been run, there are a number of methods and functions included in the package to create tables and plots to summarize the results.
+I used the <a href="https://github.com/PSLmodels/examples/blob/main/psl_examples/taxcalc/Biden2020.json">Biden 2020 campaign proposal</a> in the demo and the resulting figures are below.
+The first is a “volcano plot” that makes it easy to see the magnitude of the change in tax liability individuals across the income distribution face.
+Each dot represents a tax unit, and the x and y variables can be customized based on the user’s needs.</p>
+
+<p><img src="../images/biden_volcano.png" alt=""></p>
+
+<p>The second gives a higher-level look at how taxes change in each income bin.
+It breaks down what percentage of each income bin faces a tax increase or decrease, and the size of that change.</p>
+
+<p><img src="../images/biden_dist_fig.png" alt=""></p>
+
+<p>The final plot shown in the demo simply shows tax liabilities by year over the budget window.</p>
+
+<p><img src="../images/biden_revenue.png" alt=""></p>
+
+<p>The last feature I showed was TaxBrain’s automated reports. 
+TaxBrain uses saved results and an included report template to write a report summarizing the findings of your simulation.
+The reports include tables and figures similar to what you may find in similar write ups by the Joint Committee on Taxation or Tax Policy Center including a summary of significant changes caused by the reform, and all you need is one line of code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">report</span><span class="p">(</span><span class="n">tb</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'Biden Proposal'</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s">'biden'</span><span class="p">,</span> <span class="n">author</span><span class="o">=</span><span class="s">'Anderson Frailey'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The above code will save a PDF copy of the report in a directory called <code class="language-plaintext highlighter-rouge">biden</code> along with PNG files for each of the graphs created and the raw Markdown text used for the report, which you can then edit as needed if you would like to add content to the report that is not already included.
+Screenshots of the default report are included below.</p>
+
+<p><img src="../images/tb_report1.png" alt="">
+<img src="../images/tb_report2.png" alt="">
+<img src="../images/tb_report3.png" alt="">
+<img src="../images/tb_report4.png" alt="">
+<img src="../images/tb_report5.png" alt=""></p>
+
+<p>There are of course downsides to using TaxBrain instead of Tax-Calculator directly.
+Specifically, it’s more difficult, and sometimes impossible, to perform custom  tasks like modeling a feature of the tax code that hasn’t been added to Tax-Calculator yet or advanced work with marginal tax rates.
+But for day-to-day tax modeling, the TaxBrain Python package can significantly simply any workflow.</p>
+
+<p>Resources:</p>
+<ul>
+  <li><a href="https://github.com/PSLmodels/Tax-Brain">Tax-Brain GitHub repo</a></li>
+  <li><a href="http://taxbrain.pslmodels.org/content/intro.html">Tax-Brain Documentation</a></li>
+</ul>
+
+  </div><a class="u-url" href="/demo-day-13-taxbrain-python-api" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://policysimulationlibrary.us19.list-manage.com/subscribe/post?u=a5800eed8cadff70bf999bc29&amp;id=8437c6ae2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5800eed8cadff70bf999bc29_8437c6ae2f" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+      </div>
+      <div class="footer-col">
+        <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/pslmodels" title="pslmodels"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/pslmodels" title="pslmodels"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>
