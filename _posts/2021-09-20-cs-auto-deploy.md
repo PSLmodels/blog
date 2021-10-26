@@ -60,7 +60,7 @@ In this case, the build failed. We can inspect the logs to see that an import er
 
 ![Build failed status page](../images/cs-auto-deploy/build_status_failed.png)
 
-![Build failed status page with logs](../images/cs-auto-deploy/build_status_failed.png)
+![Build failed status page with logs](../images/cs-auto-deploy/build_status_failed_logs.png)
 
 I pushed an update to my fork of Tax-Cruncher on Github and restarted the build by clicking "Failure. Start new Build". The next build succeeded and we can click "Release" to publish the project:
 
