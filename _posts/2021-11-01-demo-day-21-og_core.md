@@ -4,7 +4,7 @@ author: "Jason DeBacker"
 description: The OG-Core Platform
 categories:
 - demo-days
-- Python
+- python
 - macroeconomics
 - overlapping-generations
 layout: post
