@@ -11,7 +11,7 @@ layout: post
 toc: true
 ---
 
-{% include youtube.html content='https://youtu.be/LkNEfbKHM5E' %}
+{% include youtube.html content='https://youtu.be/y1vSgmEtgxs' %}
 ---
 
 The [OG-Core](https://pslmodels.github.io/OG-Core/content/intro/intro.html) model is a general equilibrium, overlapping-generations (OG) model suitable for evaluating fiscal policy.
