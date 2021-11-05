@@ -14,12 +14,12 @@ toc: true
 {% include youtube.html content='https://youtu.be/y1vSgmEtgxs' %}
 ---
 
-The [OG-Core](https://pslmodels.github.io/OG-Core/content/intro/intro.html) model is a general equilibrium, overlapping generations (OG) model suitable for evaluating fiscal policy.
-Since the work of Alan Auerbach and Larry Kotlikoff in the 1980s, this class of model has become a standard in the macroeconomic analysis of tax and spending policy.
+The [OG-Core](https://pslmodels.github.io/OG-Core/) model is a general equilibrium, overlapping generations (OG) model suitable for evaluating fiscal policy.
+Since the work of Alan Auerbach and Laurence Kotlikoff in the 1980s, this class of model has become a standard in the macroeconomic analysis of tax and spending policy.
 This is for good reason.
 OG models are able to capture the impacts of taxes and spending in the short and long run, examine incidence of policy across generations of people (not just short run or steady state analysis of a cross-section of the economy), and capture important economic dynamics (e.g., crowding out effects of deficit-financed policy).
 
-In the PSL Demo Day presentation linked to above, I cover the basics of OG-Core: its history, its API, and how country-specific models can use OG-Core as a dependency.
+In the PSL Demo Day presentation linked above, I cover the basics of OG-Core: its history, its API, and how country-specific models can use OG-Core as a dependency.
 In brief, OG-Core provides a general overlapping generations framework, from which parameters can be calibrated to represent particular economies.
 Think of it this way: an economic model is just a set of parameters plus a system of equations.
 OG-Core spells out all of the equations to represent an economy with heterogeneous agents, production and government sectors, open economy options, and detailed policy rules.
