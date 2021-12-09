@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Demo Day: Using synthimpute for data fusion | PSL blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Demo Day: Using synthimpute for data fusion" />
+<meta name="author" content="Max Ghenis" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The synthimpute Python package fuses and synthesizes economic datasets with machine learning." />
+<meta property="og:description" content="The synthimpute Python package fuses and synthesizes economic datasets with machine learning." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-22-synthimpute" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-22-synthimpute" />
+<meta property="og:site_name" content="PSL blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-08T00:00:00-06:00" />
+<script type="application/ld+json">
+{"headline":"Demo Day: Using synthimpute for data fusion","url":"https://blog.pslmodels.org/demo-day-22-synthimpute","dateModified":"2021-12-08T00:00:00-06:00","datePublished":"2021-12-08T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-22-synthimpute"},"author":{"@type":"Person","name":"Max Ghenis"},"description":"The synthimpute Python package fuses and synthesizes economic datasets with machine learning.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">PSL blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Using synthimpute for data fusion</h1><p class="page-description">The synthimpute Python package fuses and synthesizes economic datasets with machine learning.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-12-08T00:00:00-06:00" itemprop="datePublished">
+        Dec 8, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Max Ghenis</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#demo-days">demo-days</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#data-fusion">data-fusion</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#synthimpute">synthimpute</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e_sk-_yWamY" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<hr>
+
+<p>Suppose a policy analyst sought to estimate the impact of a policy that changed income tax rates and benefit rules while also adding a progressive wealth tax.
+The standard approach is to use a <em>microsimulation</em> model, where the rules are programmed as code, and then to run that program over a representative sample of households.
+Unfortunately, no single US government survey captures all the households characteristics needed to analyze this policy; in particular, the reliable tax and benefit information lies in surveys like the Current Population Survey (CPS), while wealth lies in the Survey of Consumer Finances (SCF).</p>
+
+<p>Assuming the analyst wanted to start with the CPS, they have several options to estimate wealth for households to levy the progressive wealth tax.
+Two typical approaches include:</p>
+<ol>
+  <li>Linear regression, predicting wealth from other household characteristics common to the CPS and SCF.</li>
+  <li>Matching, in which each CPS household is matched with the most similar household in the SCF.</li>
+</ol>
+
+<p>Neither of these approaches, however, aim to estimate the <em>distribution</em> of wealth conditional on other characteristics.
+Linear regression explicitly estimates the mean prediction, but that could miss the tails of wealth from whom most of the wealth tax revenue will be collected.</p>
+
+<p>Instead, the analyst could apply <em>quantile regression</em> to estimate the distribution of wealth conditional on other characteristics, and then measure the effectiveness of the estimation using <em>quantile loss</em>.</p>
+
+<p>In this Demo Day, I present the concepts of microsimulation, imputation, and quantile loss to motivate the <code class="language-plaintext highlighter-rouge">synthimpute</code> Python package I’ve developed with my PolicyEngine colleague Nikhil Woodruff.
+In an experiment predicting wealth on a holdout set from the SCF, my former colleague Deepak Singh and I found that random forests significantly outperform OLS and matching for quantile regression, and this is the approach applied in <code class="language-plaintext highlighter-rouge">synthimpute</code> for both data fusion and data synthesis.
+The <code class="language-plaintext highlighter-rouge">synthimpute</code> API will be familiar to users of <code class="language-plaintext highlighter-rouge">scikit-learn</code> and <code class="language-plaintext highlighter-rouge">statsmodels</code>, with the difference being that <code class="language-plaintext highlighter-rouge">synthimpute</code>’s <code class="language-plaintext highlighter-rouge">rf_impute</code> function returns a random value from the predicted distribution; it can also skew the predictions to meet a target total.</p>
+
+<p>We’ve used <code class="language-plaintext highlighter-rouge">synthimpute</code> to fuse data for research reports at the <a href="https://ubicenter.org">UBI Center</a> and to enhance the <a href="https://policyengine.org">PolicyEngine</a> web app for UK tax and benefit simulation, and we welcome new users and contributors.
+Feel free to explore the repository or contact me with questions at <a href="mailto:max@policyengine.org">max@policyengine.org</a>.</p>
+
+<p>Resources:</p>
+<ul>
+  <li><a href="https://github.com/PolicyEngine/synthimpute"><code class="language-plaintext highlighter-rouge">synthimpute</code> package on GitHub</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1Hw0zIkbnXZluW8ntjbw_NXryRvjVcg6DDp-btkXXV_o">Presentation slides</a></li>
+  <li>
+<a href="https://www.ubicenter.org/uk-lvt">UBI Center report on land value taxation in the UK</a>, using <code class="language-plaintext highlighter-rouge">synthimpute</code> to impute land value from the UK Wealth and Assets Survey to the Family Resources Survey</li>
+  <li>
+<a href="http://policyengine.org/uk/population-impact?carbon_tax=100">PolicyEngine UK carbon tax example</a>, using <code class="language-plaintext highlighter-rouge">synthimpute</code> to impute carbon emissions from the Living Costs and Food Survey to the Family Resources Survey</li>
+  <li>
+<a href="https://colab.research.google.com/drive/1E8F7S1Uvfw_3PmpS226Sl1LWV5NBi0CE">Notebook comparing random forests to matching and other techniques</a> using a holdout set from the US Survey of Consumer Finances</li>
+  <li>
+<a href="https://towardsdatascience.com/quantile-regression-from-linear-models-to-trees-to-deep-learning-af3738b527c3">My blog post on quantile regression for Towards Data Science</a>, which laid the groundwork for <code class="language-plaintext highlighter-rouge">synthimpute</code>
+</li>
+</ul>
+
+  </div><a class="u-url" href="/demo-day-22-synthimpute" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://policysimulationlibrary.us19.list-manage.com/subscribe/post?u=a5800eed8cadff70bf999bc29&amp;id=8437c6ae2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5800eed8cadff70bf999bc29_8437c6ae2f" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+      </div>
+      <div class="footer-col">
+        <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/pslmodels" title="pslmodels"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/pslmodels" title="pslmodels"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>
