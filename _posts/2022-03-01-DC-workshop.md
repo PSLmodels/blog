@@ -7,7 +7,7 @@
  title: "Policy Simulation Library DC Workshop: Open Source Tools for Analyzing Tax Policy"
 ---
 
-![](https://pslmodels.org/imgs/PSL.svg)
+![](../images/MLK_Library_cut2.png)
 
 ------
 
@@ -28,5 +28,3 @@ To register, please use [this Google Form](https://docs.google.com/forms/d/e/1FA
 Please feel free to share this invitation with your colleagues.
 
 Questions about the workshop can be directed to Jason DeBacker at jason.debacker@gmail.com.
-
-![](../images/MLK_Library_cut.png)
