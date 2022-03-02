@@ -9,8 +9,7 @@
 
 ![](https://pslmodels.org/imgs/PSL.svg)
 
- ------
-![](../images/MLK_Library_cut.png)
+------
 
 The [Policy Simulation Library](https://pslmodels.org/) is hosting a workshop in Washington, DC on March 25 on open source tools for the analysis of tax policy. Participants will learn how to use open source models from the Library for revenue estimation, distributional analysis, and to simulate economic impacts of tax policy. The workshop is intended to be a hands-on experience and participants can expect to leave with the required software, documentation, and knowledge to continue using these tools. All models in the workshop are written in the Python programming language--familiarity with the language is helpful, but not required.
 
@@ -29,3 +28,5 @@ To register, please use [this Google Form](https://docs.google.com/forms/d/e/1FA
 Please feel free to share this invitation with your colleagues.
 
 Questions about the workshop can be directed to Jason DeBacker at jason.debacker@gmail.com.
+
+![](../images/MLK_Library_cut.png)
