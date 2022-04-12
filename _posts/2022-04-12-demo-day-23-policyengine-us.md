@@ -3,11 +3,11 @@ title: 'Demo Day: Modeling taxes and benefits with the PolicyEngine US web app'
 author: "Max Ghenis"
 description: PolicyEngine US is a web app for computing the impact of US tax and benefit policy.
 categories:
-* demo-days
-* apps
-* taxes
-* benefits
-* us
+- demo-days
+- apps
+- taxes
+- benefits
+- us
 layout: post
 toc: true
 ---
