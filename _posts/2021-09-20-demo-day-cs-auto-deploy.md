@@ -1,19 +1,17 @@
 ---
 toc: false
 layout: post
-description: How to deploy apps on C/S using the new automated deployments feature
+description: How to deploy apps on Compute Studio using the new automated deployments feature.
 categories: [demo-days, policy-simulation-library, compute-studio]
 author: Hank Doupe
 title: "Demo Day: How to deploy apps on Compute Studio"
 ---
-
 
 ------
 
 {% include youtube.html content='https://youtu.be/P1mzhZkwRt0' %}
 
 ------
-
 
 Compute Studio (C/S) is a platform for publishing and sharing computational models and data visualizations. In this demo day, I show how to publish your own project on C/S using the new automated deployments feature. You can find an in depth guide to publishing on C/S
 in the [developer docs](https://docs.compute.studio/publish/guide.html).
@@ -47,8 +45,6 @@ It's time to create the first build. You can do so by clicking "New Build". This
 You can click the "Build History" link and it will show that the build has been started:
 
 ![Build history dashboard](../images/cs-auto-deploy/build_history_dashboard_progress.png)
-
-
 
 The build status page should be updated at this point and will look something like this:
 
