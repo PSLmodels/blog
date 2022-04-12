@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Demo Day: Move Policy Reform Files from Tax-Brain to Tax-Cruncher | PSL blog</title>
+<title>Demo Day: Building policy reform files | PSL blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demo Day: Move Policy Reform Files from Tax-Brain to Tax-Cruncher" />
+<meta property="og:title" content="Demo Day: Building policy reform files" />
 <meta name="author" content="Matt Jensen" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Move reforms between models with the Compute.Studio API." />
-<meta property="og:description" content="Move reforms between models with the Compute.Studio API." />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-day-7-taxbrain-to-taxcruncher" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-day-7-taxbrain-to-taxcruncher" />
+<meta name="description" content="The first in Policy Simulation Library’s new live demo series describes specifying tax reforms." />
+<meta property="og:description" content="The first in Policy Simulation Library’s new live demo series describes specifying tax reforms." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-creating-reform-files" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-creating-reform-files" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-02T00:00:00-06:00" />
+<meta property="article:published_time" content="2020-11-18T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-day-7-taxbrain-to-taxcruncher","@type":"BlogPosting","headline":"Demo Day: Move Policy Reform Files from Tax-Brain to Tax-Cruncher","dateModified":"2021-03-02T00:00:00-06:00","datePublished":"2021-03-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-7-taxbrain-to-taxcruncher"},"author":{"@type":"Person","name":"Matt Jensen"},"description":"Move reforms between models with the Compute.Studio API.","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-creating-reform-files","@type":"BlogPosting","headline":"Demo Day: Building policy reform files","dateModified":"2020-11-18T00:00:00-06:00","datePublished":"2020-11-18T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-creating-reform-files"},"author":{"@type":"Person","name":"Matt Jensen"},"description":"The first in Policy Simulation Library’s new live demo series describes specifying tax reforms.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,8 +73,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Move Policy Reform Files from Tax-Brain to Tax-Cruncher</h1><p class="page-description">Move reforms between models with the Compute.Studio API.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-02T00:00:00-06:00" itemprop="datePublished">
-        Mar 2, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Building policy reform files</h1><p class="page-description">The first in Policy Simulation Library's new live demo series describes specifying tax reforms.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-11-18T00:00:00-06:00" itemprop="datePublished">
+        Nov 18, 2020
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">Matt Jensen</span></span>
@@ -101,23 +101,35 @@ window.onload = wrap_img;
 </ul><p>Check out the video:</p>
 
 <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0E_GawHQres" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AFJq4ZrwEqA" frameborder="0" allowfullscreen=""></iframe>
 </center>
+
+<p>We will host Demo Days every two weeks until the end of the year.
+You can see our schedule on <a href="https://www.pslmodels.org/events.html">our events page</a>.</p>
 
 <hr>
 
 <p>Show notes:</p>
 
-<p>I demonstrate how to move a policy reform file from Tax-Brain to Tax-Cruncher using the Compute.Studio API. 
-See the Demo C/S simulation linked below for text instructions that accompany the video.</p>
+<p>I demonstrate how to build policy reform files using the Tax-Brain webapp on Compute Studio.
+(Useful links below.)
+This is an introductory lesson that ends with a cliffhanger.
+We don’t run the model.
+But we do generate an individual income and payroll tax reform file that is compatible with a range of policy simulation models and analytic tools, some designed for policy decision makers, others for taxpayers and benefits recipients interested in assessing their own circumstances.</p>
+
+<p>Beyond individual and payroll tax analysis, the reform file can be used with models that assess pass-through and corporate taxation of businesses, as well as a variety of income benefit programs.
+A wide range of use cases will occupy future events.</p>
 
 <p>Resources:</p>
 
 <ul>
-  <li><a href="https://compute.studio/PSLmodels/Tax-Brain/49779/">Demo C/S simulation with instructions</a></li>
+  <li><a href="https://https://compute.studio/PSLmodels/Tax-Brain/48422/">Demo C/S simulation</a></li>
+  <li><a href="https://https://www.irs.gov/pub/irs-pdf/f1040.pdf">IRS Form 1040</a></li>
+  <li><a href="https://https://www.pslmodels.org/Catalog/index.html">PSL Catalog</a></li>
+  <li><a href="https://https://www.pslmodels.org/events.html">PSL Events</a></li>
 </ul>
 
-  </div><a class="u-url" href="/demo-day-7-taxbrain-to-taxcruncher" hidden></a>
+  </div><a class="u-url" href="/demo-day-creating-reform-files" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

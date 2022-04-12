@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Demo Day: Running the scf and microdf Python packages in Google Colab | PSL blog</title>
+<title>Demo Day: Tax-Cruncher | PSL blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demo Day: Running the scf and microdf Python packages in Google Colab" />
-<meta name="author" content="Max Ghenis" />
+<meta property="og:title" content="Demo Day: Tax-Cruncher" />
+<meta name="author" content="Peter Metz" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Analyzing US wealth data in a web-based Python notebook" />
-<meta property="og:description" content="Analyzing US wealth data in a web-based Python notebook" />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-day-6-scf-microdf" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-day-6-scf-microdf" />
+<meta name="description" content="How to calculate a taxpayer’s liabilities under current law and under a policy reform." />
+<meta property="og:description" content="How to calculate a taxpayer’s liabilities under current law and under a policy reform." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-tax-cruncher" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-tax-cruncher" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-29T00:00:00-06:00" />
+<meta property="article:published_time" content="2020-11-23T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-day-6-scf-microdf","@type":"BlogPosting","headline":"Demo Day: Running the scf and microdf Python packages in Google Colab","dateModified":"2021-01-29T00:00:00-06:00","datePublished":"2021-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-6-scf-microdf"},"author":{"@type":"Person","name":"Max Ghenis"},"description":"Analyzing US wealth data in a web-based Python notebook","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-tax-cruncher","@type":"BlogPosting","headline":"Demo Day: Tax-Cruncher","dateModified":"2020-11-23T00:00:00-06:00","datePublished":"2020-11-23T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-tax-cruncher"},"author":{"@type":"Person","name":"Peter Metz"},"description":"How to calculate a taxpayer’s liabilities under current law and under a policy reform.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,11 +73,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Running the scf and microdf Python packages in Google Colab</h1><p class="page-description">Analyzing US wealth data in a web-based Python notebook</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-29T00:00:00-06:00" itemprop="datePublished">
-        Jan 29, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Tax-Cruncher</h1><p class="page-description">How to calculate a taxpayer's liabilities under current law and under a policy reform.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-11-23T00:00:00-06:00" itemprop="datePublished">
+        Nov 23, 2020
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Max Ghenis</span></span>
+            <span class="p-author h-card" itemprop="name">Peter Metz</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -91,10 +91,10 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/categories/#demo-days">demo-days</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#microdf">microdf</a>
+        <a class="category-tags-link" href="/categories/#individual-income-tax">individual-income-tax</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#scf">scf</a>
+        <a class="category-tags-link" href="/categories/#tax-cruncher">tax-cruncher</a>
         
       
       </p>
@@ -106,35 +106,28 @@ window.onload = wrap_img;
     <ul class="section-nav">
 </ul>
 <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zlws_gC9HeY" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d4T-DOxm2QQ" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
 <hr>
 
-<p>For Monday’s PSL Demo Day, I showed how to use the <code class="language-plaintext highlighter-rouge">scf</code> and <code class="language-plaintext highlighter-rouge">microdf</code> PSL Python packages from the <a href="http://colab.research.google.com">Google Colab</a> web-based Jupyter notebook interface.</p>
+<p>For the Demo Day on November 16, I showed how to calculate a taxpayer’s liabilities under current law and under a policy reform with Tax-Cruncher.
+The Tax-Cruncher web application takes two sets of inputs: a taxpayer’s demographic and financial information and the provisions of a tax reform.</p>
 
-<p>The <code class="language-plaintext highlighter-rouge">scf</code> package extracts data from the Federal Reserve’s Survey of Consumer Finances, the canonical source of US wealth microdata.
- <code class="language-plaintext highlighter-rouge">scf</code> has a single function: <code class="language-plaintext highlighter-rouge">load(years, columns)</code>, which then returns a <code class="language-plaintext highlighter-rouge">pandas</code> <code class="language-plaintext highlighter-rouge">DataFrame</code> with the specified column(s), each record’s survey weight, and the year (when multiple years are requested).</p>
+<p>For the first Demo Day example (<a href="https://youtu.be/d4T-DOxm2QQ?t=230">3:50</a>), we looked at how eliminating the state and local tax (SALT) deduction cap and applying payroll tax to earnings above $400,000 would affect a high earner.
+In particular, our hypothetical filer had $500,000 in wages, $100,000 in capital gains, and $100,000 in itemizable expenses.
+You can see the results at <a href="https://compute.studio/PSLmodels/Tax-Cruncher/634/">Compute Studio simulation #634</a>.</p>
 
-<p>The <code class="language-plaintext highlighter-rouge">microdf</code> package analyzes survey microdata, such as that returned by the <code class="language-plaintext highlighter-rouge">scf.load</code> function.
- It offers a consistent paradigm for calculating statistics like means, medians, sums, and inequality statistics like the Gini index.
- Most functions are structured as follows: <code class="language-plaintext highlighter-rouge">f(df, col, w, groupby)</code> where <code class="language-plaintext highlighter-rouge">df</code> is a <code class="language-plaintext highlighter-rouge">pandas</code> <code class="language-plaintext highlighter-rouge">DataFrame</code> of survey microdata, <code class="language-plaintext highlighter-rouge">col</code> is a column(s) name to be summarized, <code class="language-plaintext highlighter-rouge">w</code> is the weight column, and <code class="language-plaintext highlighter-rouge">groupby</code> is the column(s) to group records in before summarizing.</p>
-
-<p>Using Google Colab, I showed how to use these packages to quickly calculate mean, median, and total wealth from the SCF data, without having to install any software or leave the browser.
- I also demonstrated how to use the <code class="language-plaintext highlighter-rouge">groupby</code> argument of <code class="language-plaintext highlighter-rouge">microdf</code> functions to show how different measures of wealth inequality have changed over time.
- Finally, I previewed some of what’s to come with <code class="language-plaintext highlighter-rouge">scf</code> and <code class="language-plaintext highlighter-rouge">microdf</code>: imputations, extrapolations, inflation, visualization, and documentation, to name a few priorities.</p>
+<p>For the second example (<a href="https://youtu.be/d4T-DOxm2QQ?t=1070">17:50</a>), we looked at how expanding the Earned Income Tax Credit (EITC) and Child Tax Credit would impact a family with $45,000 in wages and two young children.
+You can see the results at <a href="https://compute.studio/PSLmodels/Tax-Cruncher/636/">Compute Studio simulation #636</a>.</p>
 
 <p>Resources:</p>
 <ul>
-  <li><a href="https://docs.google.com/presentation/d/1bXWD_8wjbvG4J-Tq8PvlP7xK7Kz2X0oVpsOnjFZ_6zY">Slides</a></li>
-  <li><a href="https://colab.research.google.com/drive/1WLOYxAtC347g2tIyO_iJJQUAZmwL4raB?usp=sharing">Demo notebook in Google Colab</a></li>
-  <li><a href="https://compute.studio/PSLmodels/Tax-Brain/48969/">Simulation from the demonstration</a></li>
-  <li><a href="https://github.com/PSLmodels/scf"><code class="language-plaintext highlighter-rouge">scf</code> GitHub repo</a></li>
-  <li><a href="https://github.com/PSLmodels/microdf"><code class="language-plaintext highlighter-rouge">microdf</code> GitHub repo</a></li>
-  <li><a href="https://pslmodels.github.io/microdf"><code class="language-plaintext highlighter-rouge">microdf</code> documentation</a></li>
+  <li><a href="https://compute.studio/PSLmodels/Tax-Cruncher/">Tax-Cruncher</a></li>
+  <li><a href="https://compute.studio/AEIEconomics/Tax-Cruncher-Biden/">Tax-Cruncher-Biden</a></li>
 </ul>
 
-  </div><a class="u-url" href="/demo-day-6-scf-microdf" hidden></a>
+  </div><a class="u-url" href="/demo-day-tax-cruncher" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

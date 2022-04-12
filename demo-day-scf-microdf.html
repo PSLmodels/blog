@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Demo Day: The OG-Core Platform | PSL blog</title>
+<title>Demo Day: Running the scf and microdf Python packages in Google Colab | PSL blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demo Day: The OG-Core Platform" />
-<meta name="author" content="Jason DeBacker" />
+<meta property="og:title" content="Demo Day: Running the scf and microdf Python packages in Google Colab" />
+<meta name="author" content="Max Ghenis" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The OG-Core Platform" />
-<meta property="og:description" content="The OG-Core Platform" />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-day-21-og_core" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-day-21-og_core" />
+<meta name="description" content="Analyzing US wealth data in a web-based Python notebook." />
+<meta property="og:description" content="Analyzing US wealth data in a web-based Python notebook." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-scf-microdf" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-scf-microdf" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-11-01T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-01-29T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-day-21-og_core","@type":"BlogPosting","headline":"Demo Day: The OG-Core Platform","dateModified":"2021-11-01T00:00:00-05:00","datePublished":"2021-11-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-21-og_core"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"The OG-Core Platform","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-scf-microdf","@type":"BlogPosting","headline":"Demo Day: Running the scf and microdf Python packages in Google Colab","dateModified":"2021-01-29T00:00:00-06:00","datePublished":"2021-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-scf-microdf"},"author":{"@type":"Person","name":"Max Ghenis"},"description":"Analyzing US wealth data in a web-based Python notebook.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,15 +73,15 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demo Day: The OG-Core Platform</h1><p class="page-description">The OG-Core Platform</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-11-01T00:00:00-05:00" itemprop="datePublished">
-        Nov 1, 2021
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Running the scf and microdf Python packages in Google Colab</h1><p class="page-description">Analyzing US wealth data in a web-based Python notebook.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-29T00:00:00-06:00" itemprop="datePublished">
+        Jan 29, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Jason DeBacker</span></span>
+            <span class="p-author h-card" itemprop="name">Max Ghenis</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -91,13 +91,10 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/categories/#demo-days">demo-days</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#python">python</a>
+        <a class="category-tags-link" href="/categories/#microdf">microdf</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#macroeconomics">macroeconomics</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/categories/#overlapping-generations">overlapping-generations</a>
+        <a class="category-tags-link" href="/categories/#scf">scf</a>
         
       
       </p>
@@ -109,45 +106,35 @@ window.onload = wrap_img;
     <ul class="section-nav">
 </ul>
 <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y1vSgmEtgxs" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zlws_gC9HeY" frameborder="0" allowfullscreen=""></iframe>
 </center>
 
 <hr>
 
-<p>The <a href="https://pslmodels.github.io/OG-Core/">OG-Core</a> model is a general equilibrium, overlapping generations (OG) model suitable for evaluating fiscal policy.
-Since the work of Alan Auerbach and Laurence Kotlikoff in the 1980s, this class of model has become a standard in the macroeconomic analysis of tax and spending policy.
-This is for good reason.
-OG models are able to capture the impacts of taxes and spending in the short and long run, examine incidence of policy across generations of people (not just short run or steady state analysis of a cross-section of the economy), and capture important economic dynamics (e.g., crowding out effects of deficit-financed policy).</p>
+<p>For Monday’s PSL Demo Day, I showed how to use the <code class="language-plaintext highlighter-rouge">scf</code> and <code class="language-plaintext highlighter-rouge">microdf</code> PSL Python packages from the <a href="http://colab.research.google.com">Google Colab</a> web-based Jupyter notebook interface.</p>
 
-<p>In the PSL Demo Day presentation linked above, I cover the basics of OG-Core: its history, its API, and how country-specific models can use OG-Core as a dependency.
-In brief, OG-Core provides a general overlapping generations framework, from which parameters can be calibrated to represent particular economies.
-Think of it this way: an economic model is just a set of parameters plus a system of equations.
-OG-Core spells out all of the equations to represent an economy with heterogeneous agents, production and government sectors, open economy options, and detailed policy rules.
-OG-Core also includes default values for all parameters, along with parameter metadata and parameter validation rules.
-A country specific application is then just a particular parameterization of the general OG-Core model.</p>
+<p>The <code class="language-plaintext highlighter-rouge">scf</code> package extracts data from the Federal Reserve’s Survey of Consumer Finances, the canonical source of US wealth microdata.
+<code class="language-plaintext highlighter-rouge">scf</code> has a single function: <code class="language-plaintext highlighter-rouge">load(years, columns)</code> , which then returns a <code class="language-plaintext highlighter-rouge">pandas</code>  <code class="language-plaintext highlighter-rouge">DataFrame</code> with the specified column(s), each record’s survey weight, and the year (when multiple years are requested).</p>
 
-<p>As an example of a country-specific application, one can look at the <a href="https://pslmodels.github.io/OG-USA">OG-USA model</a>.
-This model provides a calibration of OG-Core to the United States.
-The source code in that project allows one to go from raw data sources to the estimation and calibration procedures used to determine parameter values representing the United States, to parameter values in formats suitable for use in OG-Core.
-Country-specific models like OG-USA include (where available) links to microsimulation models of tax and spending programs to allow detailed microdata of actual and counterfactual policies to inform the net tax-transfer functions used in the OG-Core model.
-For those interested in building their own country-specific model, the OG-USA project provides a good example to work from.</p>
+<p>The <code class="language-plaintext highlighter-rouge">microdf</code> package analyzes survey microdata, such as that returned by the <code class="language-plaintext highlighter-rouge">scf.load</code> function.
+ It offers a consistent paradigm for calculating statistics like means, medians, sums, and inequality statistics like the Gini index.
+ Most functions are structured as follows: <code class="language-plaintext highlighter-rouge">f(df, col, w, groupby)</code> where <code class="language-plaintext highlighter-rouge">df</code> is a <code class="language-plaintext highlighter-rouge">pandas</code>  <code class="language-plaintext highlighter-rouge">DataFrame</code> of survey microdata, <code class="language-plaintext highlighter-rouge">col</code> is a column(s) name to be summarized, <code class="language-plaintext highlighter-rouge">w</code> is the weight column, and <code class="language-plaintext highlighter-rouge">groupby</code> is the column(s) to group records in before summarizing.</p>
 
-<p>We encourage you to take a look at OG-Core and related projects.
-New contributions and applications are always welcome.
-If you have questions or comments, reach out through the relevant repositories on Github to me, <a href="https://github.com/jdebacker/">@jdebacker</a>, or Rick Evans, <a href="https://github.com/rickecon">@rickecon</a>.</p>
+<p>Using Google Colab, I showed how to use these packages to quickly calculate mean, median, and total wealth from the SCF data, without having to install any software or leave the browser.
+ I also demonstrated how to use the <code class="language-plaintext highlighter-rouge">groupby</code> argument of <code class="language-plaintext highlighter-rouge">microdf</code> functions to show how different measures of wealth inequality have changed over time.
+ Finally, I previewed some of what’s to come with <code class="language-plaintext highlighter-rouge">scf</code> and <code class="language-plaintext highlighter-rouge">microdf</code> : imputations, extrapolations, inflation, visualization, and documentation, to name a few priorities.</p>
 
 <p>Resources:</p>
 <ul>
-  <li><a href="https://pslmodels.github.io/OG-Core/content/intro/intro.html">OG-Core documentation</a></li>
-  <li>
-<a href="https://pslmodels.github.io/OG-USA">OG-USA documentation</a> package for unit testing in Python</li>
-  <li><a href="http://taxcalc.pslmodels.org">Tax-Calculator documentation</a></li>
-  <li><a href="https://github.com/PSLmodels/OG-UK">OG-UK repository</a></li>
-  <li><a href="https://github.com/PolicyEngine/openfisca-uk">OpenFisca-UK repository</a></li>
-  <li><a href="https://docs.google.com/presentation/d/1AT3SYNJ6JieAB1HrPT6HPSBC6-2A1QNtIdBDO-3PSCI/edit?usp=sharing">Slides from the Demo Day presentation</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1bXWD_8wjbvG4J-Tq8PvlP7xK7Kz2X0oVpsOnjFZ_6zY">Slides</a></li>
+  <li><a href="https://colab.research.google.com/drive/1WLOYxAtC347g2tIyO_iJJQUAZmwL4raB?usp=sharing">Demo notebook in Google Colab</a></li>
+  <li><a href="https://compute.studio/PSLmodels/Tax-Brain/48969/">Simulation from the demonstration</a></li>
+  <li><a href="https://github.com/PSLmodels/scf"><code class="language-plaintext highlighter-rouge">scf</code> GitHub repo</a></li>
+  <li><a href="https://github.com/PSLmodels/microdf"><code class="language-plaintext highlighter-rouge">microdf</code> GitHub repo</a></li>
+  <li><a href="https://pslmodels.github.io/microdf"><code class="language-plaintext highlighter-rouge">microdf</code> documentation</a></li>
 </ul>
 
-  </div><a class="u-url" href="/demo-day-21-og_core" hidden></a>
+  </div><a class="u-url" href="/demo-day-scf-microdf" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

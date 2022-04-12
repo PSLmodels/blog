@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Demo Day: Keeping Jupyter Book documentation up to date with GH Actions | PSL blog</title>
+<title>Demo Day: Updating Jupyter Book documentation with GitHub Actions | PSL blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demo Day: Keeping Jupyter Book documentation up to date with GH Actions" />
+<meta property="og:title" content="Demo Day: Updating Jupyter Book documentation with GitHub Actions" />
 <meta name="author" content="Jason DeBacker" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Keeping Jupyter Book documentation up-to-date with GH Actions" />
-<meta property="og:description" content="Keeping Jupyter Book documentation up-to-date with GH Actions" />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-day-12-jupyter-book-deploy" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-day-12-jupyter-book-deploy" />
+<meta name="description" content="How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow." />
+<meta property="og:description" content="How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-jupyter-book-deploy" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-jupyter-book-deploy" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-05-17T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-day-12-jupyter-book-deploy","@type":"BlogPosting","headline":"Demo Day: Keeping Jupyter Book documentation up to date with GH Actions","dateModified":"2021-05-17T00:00:00-05:00","datePublished":"2021-05-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-12-jupyter-book-deploy"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"Keeping Jupyter Book documentation up-to-date with GH Actions","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-jupyter-book-deploy","@type":"BlogPosting","headline":"Demo Day: Updating Jupyter Book documentation with GitHub Actions","dateModified":"2021-05-17T00:00:00-05:00","datePublished":"2021-05-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-jupyter-book-deploy"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Keeping Jupyter Book documentation up to date with GH Actions</h1><p class="page-description">Keeping Jupyter Book documentation up-to-date with GH Actions</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-17T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Updating Jupyter Book documentation with GitHub Actions</h1><p class="page-description">How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-05-17T00:00:00-05:00" itemprop="datePublished">
         May 17, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -126,8 +126,8 @@ Portions of a Jupyter Book that contain executable code can be downloaded as Jup
 <p>The <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> documentation is excellent and will help you get started creating your “book” (tip: pay close attention to formatting details, including proper whitespace).
 What I do here is outline how you can easily deploy your documentation to the web and keep it up-to-date with your project.</p>
 
-<p>I start from the assumption that you have the source files to build your Jupyter Book checked into the main branch of your project (these maybe <code class="language-plaintext highlighter-rouge">yml</code>, <code class="language-plaintext highlighter-rouge">md</code>, <code class="language-plaintext highlighter-rouge">rst</code>, <code class="language-plaintext highlighter-rouge">ipynb</code> or other files).
-For version control purposes and to keep your repo trim, you generally don’t want to check the built documentation files to this branch (tip: consider adding the folder these files will go to (e.g., <code class="language-plaintext highlighter-rouge">/_build</code> to your <code class="language-plaintext highlighter-rouge">.gitignore</code>).
+<p>I start from the assumption that you have the source files to build your Jupyter Book checked into the main branch of your project (these maybe <code class="language-plaintext highlighter-rouge">yml</code> , <code class="language-plaintext highlighter-rouge">md</code> , <code class="language-plaintext highlighter-rouge">rst</code> , <code class="language-plaintext highlighter-rouge">ipynb</code> or other files).
+For version control purposes and to keep your repo trim, you generally don’t want to check the built documentation files to this branch (tip: consider adding the folder these files will go to (e.g., <code class="language-plaintext highlighter-rouge">/_build</code> to your <code class="language-plaintext highlighter-rouge">.gitignore</code> ).
 When these files are in place and you can successfully build your book locally, it’s time for the first step.</p>
 
 <p><em>Step 1</em>: Add two GH Actions to your project’s workflow:</p>
@@ -135,39 +135,43 @@ When these files are in place and you can successfully build your book locally, 
   <li>An action to check that your documentation files build without an error.
 I like to run this on each push to a PR.
 The action won’t hang on warnings, but will fail if your Jupyter Book doesn’t build at all.
-An example of this action from the OG-USA repo is <a href="https://github.com/PSLmodels/OG-USA/blob/master/.github/workflows/docs_check.yml">here</a>:
-```</li>
+An example of this action from the OG-USA repo is <a href="https://github.com/PSLmodels/OG-USA/blob/master/.github/workflows/docs_check.yml">here</a>:</li>
 </ol>
 
-<p>name: Check that docs build
-on: [push, pull_request]</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+name: Check that docs build
+on: [push, pull_request]
 
-<p>jobs:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2 # If you’re using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          persist-credentials: false</p>
+          persist-credentials: false
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - name: Setup Miniconda
-    uses: conda-incubator/setup-miniconda@v2
-    with:
-      activate-environment: ogusa-dev
-      environment-file: environment.yml
-      python-version: 3.7
-      auto-activate-base: false
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: ogusa-dev
+          environment-file: environment.yml
+          python-version: 3.7
+          auto-activate-base: false
 
-  - name: Build # Build Jupyter Book
-    shell: bash -l {0}
-    run: |
-      pip install jupyter-book
-      pip install sphinxcontrib-bibtex==1.0.0
-      pip install -e .
-      cd docs
-      jb build ./book ``` To use this in your repo, you'll just need to change a few settings such as the name of the environment and perhaps the Python version and path to the book source files. Note that in the above `yml` file `sphinxcontrib-bibtex` is pinned. You maybe able to unpin this, but OG-USA needed this pin for documentation to compile property due to changes in the `jupyter-book` and `sphinxcontrib-bibtex` packages.
+      - name: Build # Build Jupyter Book
+        shell: bash -l {0}
+        run: |
+          pip install jupyter-book
+          pip install sphinxcontrib-bibtex==1.0.0
+          pip install -e .
+          cd docs
+          jb build ./book
 </code></pre></div></div>
+
+<p>To use this in your repo, you’ll just need to change a few settings such as the name of the environment and perhaps the Python version and path to the book source files.
+Note that in the above <code class="language-plaintext highlighter-rouge">yml</code> file <code class="language-plaintext highlighter-rouge">sphinxcontrib-bibtex</code> is pinned.
+You maybe able to unpin this, but OG-USA needed this pin for documentation to compile property due to changes in the <code class="language-plaintext highlighter-rouge">jupyter-book</code> and <code class="language-plaintext highlighter-rouge">sphinxcontrib-bibtex</code> packages.</p>
 
 <ol>
   <li>An action that builds and deploys the Jupyter Book to <a href="https://pages.github.com">GH Pages</a>.
@@ -177,7 +181,7 @@ To modify this action for your repo, you’ll need to change the repo name, the 
 </ol>
 
 <p><em>Step 2</em>: Once the action in (2) above is run, your compiled Jupyter Book docs will be pushed to a <code class="language-plaintext highlighter-rouge">gh-pages</code> branch in your repository (the action will create this branch for you if it doesn’t already exist).
-At this point, you should be able to see your docs at the url <code class="language-plaintext highlighter-rouge">https://GH_org_name.github.io/Repo_name</code>.
+At this point, you should be able to see your docs at the url <code class="language-plaintext highlighter-rouge">https://GH_org_name.github.io/Repo_name</code> .
 But it probably won’t look very good until you complete this next step.
 To have your Jupyter Book render on the web as you see it on your machine, you will want to push and merge an empty file with the name <code class="language-plaintext highlighter-rouge">.nojekyll</code> into your repo’s <code class="language-plaintext highlighter-rouge">gh-pages</code> branch.</p>
 
@@ -192,7 +196,7 @@ By doing so you’ll automate an important part of your project’s documentatio
   <li>Project maintainers should ensure that docs are updated with PRs that are relevant (e.g., if the PR changes an the source code affecting a user interface, then documentation showing example usage should be updated) and help contributors make the necessary changes to the documentation source files.</li>
 </ul>
 
-  </div><a class="u-url" href="/demo-day-12-jupyter-book-deploy" hidden></a>
+  </div><a class="u-url" href="/demo-day-jupyter-book-deploy" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

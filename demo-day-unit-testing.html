@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="http://pslmodels.org/imgs/PolicySimLibrary-1000px.png"/><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Demo Day: Unit Testing for Open Source Projects | PSL blog</title>
+<title>Demo Day: Unit testing for open source projects | PSL blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Demo Day: Unit Testing for Open Source Projects" />
+<meta property="og:title" content="Demo Day: Unit testing for open source projects" />
 <meta name="author" content="Jason DeBacker" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Unit Testing for Open Source Projects" />
-<meta property="og:description" content="Unit Testing for Open Source Projects" />
-<link rel="canonical" href="https://blog.pslmodels.org/demo-day-16-unit_testing" />
-<meta property="og:url" content="https://blog.pslmodels.org/demo-day-16-unit_testing" />
+<meta name="description" content="How to ensure that individual functions do what you expect." />
+<meta property="og:description" content="How to ensure that individual functions do what you expect." />
+<link rel="canonical" href="https://blog.pslmodels.org/demo-day-unit-testing" />
+<meta property="og:url" content="https://blog.pslmodels.org/demo-day-unit-testing" />
 <meta property="og:site_name" content="PSL blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-09T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://blog.pslmodels.org/demo-day-16-unit_testing","@type":"BlogPosting","headline":"Demo Day: Unit Testing for Open Source Projects","dateModified":"2021-08-09T00:00:00-05:00","datePublished":"2021-08-09T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-16-unit_testing"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"Unit Testing for Open Source Projects","@context":"https://schema.org"}</script>
+{"url":"https://blog.pslmodels.org/demo-day-unit-testing","@type":"BlogPosting","headline":"Demo Day: Unit testing for open source projects","dateModified":"2021-08-09T00:00:00-05:00","datePublished":"2021-08-09T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.pslmodels.org/demo-day-unit-testing"},"author":{"@type":"Person","name":"Jason DeBacker"},"description":"How to ensure that individual functions do what you expect.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.pslmodels.org/feed.xml" title="PSL blog" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Unit Testing for Open Source Projects</h1><p class="page-description">Unit Testing for Open Source Projects</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-09T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Demo Day: Unit testing for open source projects</h1><p class="page-description">How to ensure that individual functions do what you expect.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-08-09T00:00:00-05:00" itemprop="datePublished">
         Aug 9, 2021
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -133,7 +133,7 @@ But there are a number benefits to writing unit tests:</p>
 And for open source projects, or projects with many contributors, writing unit tests is important in reducing the likelihood that errors are introduced into your code.
 This is why the <a href="https://pslmodels.org/Catalog/library_criteria.html">PSL catalog criteria</a> requires projects to provide at least some level of unit testing.</p>
 
-<p>In the PSL Demo Day video linked above, I illustrate how to implement unit tests in R using the <a href="https://testthat.r-lib.org"><code class="language-plaintext highlighter-rouge">testthat</code></a> package.  There are essentially three steps to this process:</p>
+<p>In the PSL Demo Day video linked above, I illustrate how to implement unit tests in R using the <a href="https://testthat.r-lib.org"> <code class="language-plaintext highlighter-rouge">testthat</code> </a> package.  There are essentially three steps to this process:</p>
 <ol>
   <li>Create a directory to put your testing script in, e.g., a folder called <code class="language-plaintext highlighter-rouge">tests</code>
 </li>
@@ -154,7 +154,7 @@ This is why the <a href="https://pslmodels.org/Catalog/library_criteria.html">PS
 <p>Check out the video to see examples of how each of these steps is executed.
 I’ve also found <a href="https://towardsdatascience.com/unit-testing-in-r-68ab9cc8d211">this blog post</a> on unit tests with <code class="language-plaintext highlighter-rouge">testthat</code> to be helpful.</p>
 
-<p>Unit testing in Python seems to be more developed and straightforward with the excellent <a href="https://docs.pytest.org/en/6.2.x/"><code class="language-plaintext highlighter-rouge">pytest</code></a> package.
+<p>Unit testing in Python seems to be more developed and straightforward with the excellent <a href="https://docs.pytest.org/en/6.2.x/"> <code class="language-plaintext highlighter-rouge">pytest</code> </a> package.
 While <code class="language-plaintext highlighter-rouge">pytest</code> offers many options for parameterizing tests, running tests in parallel, and more, the basic steps remain the same as those outlined above:</p>
 <ol>
   <li>Create a directory for your test modules (call this folder <code class="language-plaintext highlighter-rouge">tests</code> as <code class="language-plaintext highlighter-rouge">pytest</code> will look for that name).</li>
@@ -180,7 +180,7 @@ In a future Demo Day and blog post, we’ll talk about continuous integration te
   <li><a href="https://github.com/TaxFoundation/capital-cost-recovery/tree/master/tests">Unit tests for the <code class="language-plaintext highlighter-rouge">capital-cost-recovery</code> model</a></li>
 </ul>
 
-  </div><a class="u-url" href="/demo-day-16-unit_testing" hidden></a>
+  </div><a class="u-url" href="/demo-day-unit-testing" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
