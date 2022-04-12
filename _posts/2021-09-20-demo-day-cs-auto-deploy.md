@@ -4,7 +4,7 @@ layout: post
 description: How to deploy apps on Compute Studio using the new automated deployments feature.
 categories: [demo-days, policy-simulation-library, compute-studio]
 author: Hank Doupe
-title: "Demo Day: How to deploy apps on Compute Studio"
+title: "Demo Day: Deploying apps on Compute Studio"
 ---
 
 ------

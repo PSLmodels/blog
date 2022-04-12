@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: How to use the TaxBrain python API
+description: A programmatic interface to compute the impact of tax reform.
 categories: [demo-days, individual-income-tax, tax-brain, tax-calculator]
 author: Anderson Frailey
 title: "Demo Day: Using the TaxBrain Python API"
@@ -63,7 +63,6 @@ Screenshots of the default report are included below.
 ![](../images/tb_report3.png)
 ![](../images/tb_report4.png)
 ![](../images/tb_report5.png)
-
 
 There are of course downsides to using TaxBrain instead of Tax-Calculator directly.
 Specifically, it's more difficult, and sometimes impossible, to perform custom  tasks like modeling a feature of the tax code that hasn't been added to Tax-Calculator yet or advanced work with marginal tax rates.

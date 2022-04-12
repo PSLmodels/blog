@@ -1,8 +1,8 @@
 ---
 toc: true
 layout: post
-description: How to use the Tax-Brain web-app
-categories: [demo-days, individual-income-tax, tax-brain]
+description: Computing the impact of US tax reform with the Tax-Brain web-app.
+categories: [demo-days, individual-income-tax, tax-brain, us]
 author: Anderson Frailey
 title: "Demo Day: Tax-Brain"
 ---

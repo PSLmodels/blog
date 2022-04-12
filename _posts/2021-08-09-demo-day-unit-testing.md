@@ -1,12 +1,8 @@
 ---
-title: 'Demo Day: Unit Testing for Open Source Projects'
+title: 'Demo Day: Unit testing for open source projects'
 author: "Jason DeBacker"
-description: Unit Testing for Open Source Projects
-categories:
-- demo-days
-- R
-- Python
-- unit-testing
+description: How to ensure that individual functions do what you expect.
+categories: [demo-days, R, Python, unit-testing]
 layout: post
 toc: true
 ---
@@ -31,7 +27,7 @@ Often, writing unit tests will save you time in the longer run because it reduce
 And for open source projects, or projects with many contributors, writing unit tests is important in reducing the likelihood that errors are introduced into your code.
 This is why the [PSL catalog criteria](https://pslmodels.org/Catalog/library_criteria.html) requires projects to provide at least some level of unit testing.
 
-In the PSL Demo Day video linked above, I illustrate how to implement unit tests in R using the [`testthat`](https://testthat.r-lib.org) package.  There are essentially three steps to this process:
+In the PSL Demo Day video linked above, I illustrate how to implement unit tests in R using the [ `testthat` ](https://testthat.r-lib.org) package.  There are essentially three steps to this process:
 1. Create a directory to put your testing script in, e.g., a folder called `tests`
 2. Create one or more scripts that define your tests.
    * Each test is represented as a call of the `test_that` function and contain an statement that will evaluate as true or false (e.g., you may use the `expect_equal` function to verify that a function returns expected values given certain inputs).
@@ -43,7 +39,7 @@ In the PSL Demo Day video linked above, I illustrate how to implement unit tests
 Check out the video to see examples of how each of these steps is executed.
 I've also found [this blog post](https://towardsdatascience.com/unit-testing-in-r-68ab9cc8d211) on unit tests with `testthat` to be helpful.
 
-Unit testing in Python seems to be more developed and straightforward with the excellent [`pytest`](https://docs.pytest.org/en/6.2.x/) package.
+Unit testing in Python seems to be more developed and straightforward with the excellent [ `pytest` ](https://docs.pytest.org/en/6.2.x/) package.
 While `pytest` offers many options for parameterizing tests, running tests in parallel, and more, the basic steps remain the same as those outlined above:
 1. Create a directory for your test modules (call this folder `tests` as `pytest` will look for that name).
 2. Create test modules that define each test
@@ -53,7 +49,6 @@ While `pytest` offers many options for parameterizing tests, running tests in pa
 
 That's about it to get started writing unit tests for your code.  PSL cataloged projects provide many excellent examples of a variety of unit tests, so search them for examples to build from.
 In a future Demo Day and blog post, we'll talk about continuous integration testing to help get even more out of you unit tests.
-
 
 Resources:
 * [`testthat`](https://testthat.r-lib.org) package for unit testing in R

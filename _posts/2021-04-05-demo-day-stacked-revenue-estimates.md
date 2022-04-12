@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: How to use Tax-Calculator to produce stacked revenue estimates
+description: How to evaluate the cumulative effects of a multi-part tax reform.
 categories: [demo-days, individual-income-tax, tax-brain, tax-calculator]
 author: Jason DeBacker
 title: "Demo Day: Producing stacked revenue estimates with the Tax-Calculator Python API"
@@ -53,8 +53,7 @@ Additional outputs (even the full set of microdata after each provision is appli
 In the future, look for [Tax-Brain](https://github.com/PSLmodels/Tax-Brain) to add stacked revenue estimates to its capabilities.
 It'll still be important for users to carve up their full list of policy changes into sets of provisions as we did in Steps 1 and 2 above, but Tax-Brain will then take care of the rest behind the scenes.
 
-
 Resources:
 
-- [Colab Notebook with example](https://colab.research.google.com/drive/1P-m61lWbPpb_ih42vQKrD2zi9Bpe16BM?usp=sharing)
-- [Biden campaign reform file in PSL Examples](https://github.com/PSLmodels/examples/blob/main/psl_examples/taxcalc/Biden2020.json)
+* [Colab Notebook with example](https://colab.research.google.com/drive/1P-m61lWbPpb_ih42vQKrD2zi9Bpe16BM?usp=sharing)
+* [Biden campaign reform file in PSL Examples](https://github.com/PSLmodels/examples/blob/main/psl_examples/taxcalc/Biden2020.json)

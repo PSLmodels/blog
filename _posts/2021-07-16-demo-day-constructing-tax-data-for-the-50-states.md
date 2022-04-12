@@ -1,12 +1,8 @@
 ---
-title: 'Demo Day: Constructing Tax Data for the 50 States'
+title: 'Demo Day: Constructing tax data for the 50 states'
 author: "Don Boyd"
-description: Constructing Tax Data for the 50 States
-categories:
-- demo-days
-- individual-income-tax
-- policy-simulation-library
-- PSL
+description: A new dataset to facilitate state-level analysis of federal tax reforms.
+categories: [demo-days, tax, data, us]
 layout: post
 toc: true
 ---
