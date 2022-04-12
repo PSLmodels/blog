@@ -1,10 +1,10 @@
 ---
 toc: true
 layout: post
-description: Move reforms between models with the Compute.Studio API.
+description: How to move reforms between a tax-unit-level and society-wide model with the Compute.Studio API.
 categories: [demo-days]
 author: Matt Jensen
-title: "Demo Day: Move Policy Reform Files from Tax-Brain to Tax-Cruncher"
+title: "Demo Day: Moving policy reform files from Tax-Brain to Tax-Cruncher"
 ---
 
 Check out the video:

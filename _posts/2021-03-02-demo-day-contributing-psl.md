@@ -1,10 +1,10 @@
 ---
 toc: true
 layout: post
-description: How to contribute to PSL projects
+description: How to help software projects in the Policy Simulation Library.
 categories: [demo-days, PSL, git, github]
 author: Jason DeBacker
-title: "Demo Day: How to contribute to PSL projects"
+title: "Demo Day: Contributing to PSL projects"
 ---
 
  {% include youtube.html content='https://youtu.be/LZUPYJ0RwJM' %}
@@ -30,7 +30,6 @@ A couple ways to do this are to join any of the [PSL community events](https://p
 These are great places to meet community members and ask questions about how and where to best contribute.
 
 I hope this helps you get started as a PSL contributor -- we look forward to getting you involved in making policy analysis better and more transparent!
-
 
 Resources:
 * [PSL Git-Tutorial](https://pslmodels.github.io/Git-Tutorial/content/intro.html)

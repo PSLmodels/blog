@@ -1,12 +1,8 @@
 ---
-title: 'Demo Day: The OG-Core Platform'
+title: 'Demo Day: The OG-Core platform'
 author: "Jason DeBacker"
-description: The OG-Core Platform
-categories:
-- demo-days
-- python
-- macroeconomics
-- overlapping-generations
+description: A Python platform for building country-specific overlapping generations general equilibrium models.
+categories: [demo-days, python, macroeconomics, overlapping-generations]
 layout: post
 toc: true
 ---
@@ -35,7 +31,6 @@ For those interested in building their own country-specific model, the OG-USA pr
 We encourage you to take a look at OG-Core and related projects.
 New contributions and applications are always welcome.
 If you have questions or comments, reach out through the relevant repositories on Github to me, [@jdebacker](https://github.com/jdebacker/), or Rick Evans, [@rickecon](https://github.com/rickecon).
-
 
 Resources:
 * [OG-Core documentation](https://pslmodels.github.io/OG-Core/content/intro/intro.html)

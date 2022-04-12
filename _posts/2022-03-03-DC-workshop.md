@@ -1,10 +1,10 @@
 ---
  toc: true
  layout: post
- description: Washington, DC open-source modeling workshop, March 25, 2022, 8:30am-1:00pm, Martin Luther King, Jr. Memorial Library
+ description: Washington, DC open-source modeling workshop, March 25, 2022, 8:30am-1:00pm, Martin Luther King, Jr. Memorial Library.
  categories: [PSL, PSL-Foundation, Workshop]
  author: Jason DeBacker
- title: "Policy Simulation Library DC Workshop: Open Source Tools for Analyzing Tax Policy"
+ title: "Policy Simulation Library DC Workshop: Open source tools for analyzing tax policy"
 ---
 
 ![](../images/MLK_Library_cut2.png)

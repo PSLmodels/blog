@@ -2,11 +2,7 @@
 title: 'Demo Day: Using synthimpute for data fusion'
 author: "Max Ghenis"
 description: The synthimpute Python package fuses and synthesizes economic datasets with machine learning.
-categories:
-- demo-days
-- python
-- data-fusion
-- synthimpute
+categories: [demo-days, python, data-fusion, synthimpute]
 layout: post
 toc: true
 ---
@@ -30,7 +26,7 @@ Instead, the analyst could apply _quantile regression_ to estimate the distribut
 
 In this Demo Day, I present the concepts of microsimulation, imputation, and quantile loss to motivate the `synthimpute` Python package I've developed with my PolicyEngine colleague Nikhil Woodruff.
 In an experiment predicting wealth on a holdout set from the SCF, my former colleague Deepak Singh and I found that random forests significantly outperform OLS and matching for quantile regression, and this is the approach applied in `synthimpute` for both data fusion and data synthesis.
-The `synthimpute` API will be familiar to users of `scikit-learn` and `statsmodels`, with the difference being that `synthimpute`'s `rf_impute` function returns a random value from the predicted distribution; it can also skew the predictions to meet a target total.
+The `synthimpute` API will be familiar to users of `scikit-learn` and `statsmodels` , with the difference being that `synthimpute` 's `rf_impute` function returns a random value from the predicted distribution; it can also skew the predictions to meet a target total.
 
 We've used `synthimpute` to fuse data for research reports at the [UBI Center](https://ubicenter.org) and to enhance the [PolicyEngine](https://policyengine.org) web app for UK tax and benefit simulation, and we welcome new users and contributors.
 Feel free to explore the repository or contact me with questions at [max@policyengine.org](mailto:max@policyengine.org).
