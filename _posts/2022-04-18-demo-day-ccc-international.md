@@ -2,7 +2,7 @@
 title: 'Demo Day: Analyzing tax competitiveness with Cost-of-Capital-Calculator'
 author: "Jason DeBacker"
 description: Using Cost-of-Capital-Calculator with data on international business tax policies.
-categories: [demo-days, cost-of-capital-calculator,   business-taxation.   corporate-income-tax, taxes]
+categories: [demo-days, cost-of-capital-calculator, business-taxation, corporate-income-tax, taxes]
 layout: post
 toc: true
 ---
