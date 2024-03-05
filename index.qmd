@@ -1,5 +1,5 @@
 ---
-title: "PSL_blog_v2"
+title: "PSL Blog"
 listing:
   contents: posts
   sort: "date desc"
