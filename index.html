@@ -1,105 +1,1711 @@
-<div class="home"><h1 id="posts">Posts</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+<title>Policy Simulation Library Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
-  
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
- 
-  
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/2023-year-in-review">
-    2023: A year in review
-    </a>
-</h3><p class="post-meta-description">Highlights from the Policy Simulation Library in 2023.</p><p class="post-meta">Dec 28, 2023</p>
-</li><li><h3>
-    <a class="post-link" href="/2022-year-in-review">
-    2022: A year in review
-    </a>
-</h3><p class="post-meta-description">Highlights from the Policy Simulation Library in 2022.</p><p class="post-meta">Dec 31, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-cambridge-cash-assistance">
-    Demo Day: How does targeted cash assistance affect incentives to work?
-    </a>
-</h3><p class="post-meta-description">How a proposed program in Cambridge, Massachusetts would affect poverty and incentives.</p><p class="post-meta">Jul 14, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-github">
-    Demo Day: Getting Started with GitHub
-    </a>
-</h3><p class="post-meta-description">The basics of forking and cloning repositories and working on branches.</p><p class="post-meta">Jun 28, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-ccc-international">
-    Demo Day: Analyzing tax competitiveness with Cost-of-Capital-Calculator
-    </a>
-</h3><p class="post-meta-description">Using Cost-of-Capital-Calculator with data on international business tax policies.</p><p class="post-meta">Apr 18, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-policyengine-us">
-    Demo Day: Modeling taxes and benefits with the PolicyEngine US web app
-    </a>
-</h3><p class="post-meta-description">PolicyEngine US is a new web app for computing the impact of US tax and benefit policy.</p><p class="post-meta">Apr 12, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/DC-workshop">
-    Policy Simulation Library DC Workshop: Open source tools for analyzing tax policy
-    </a>
-</h3><p class="post-meta-description">Washington, DC open-source modeling workshop, March 25, 2022, 8:30am-1:00pm, Martin Luther King, Jr. Memorial Library.</p><p class="post-meta">Mar 3, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/2021-year-in-review">
-    2021: A year in review
-    </a>
-</h3><p class="post-meta-description">Highlights from the Policy Simulation Library in 2021.</p><p class="post-meta">Dec 28, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-synthimpute">
-    Demo Day: Using synthimpute for data fusion
-    </a>
-</h3><p class="post-meta-description">The synthimpute Python package fuses and synthesizes economic datasets with machine learning.</p><p class="post-meta">Dec 8, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-og-core">
-    Demo Day: The OG-Core platform
-    </a>
-</h3><p class="post-meta-description">A Python platform for building country-specific overlapping generations general equilibrium models.</p><p class="post-meta">Nov 1, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-cs-auto-deploy">
-    Demo Day: Deploying apps on Compute Studio
-    </a>
-</h3><p class="post-meta-description">How to deploy apps on Compute Studio using the new automated deployments feature.</p><p class="post-meta">Sep 20, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-unit-testing">
-    Demo Day: Unit testing for open source projects
-    </a>
-</h3><p class="post-meta-description">How to ensure that individual functions do what you expect.</p><p class="post-meta">Aug 9, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-constructing-tax-data-for-the-50-states">
-    Demo Day: Constructing tax data for the 50 states
-    </a>
-</h3><p class="post-meta-description">A new dataset to facilitate state-level analysis of federal tax reforms.</p><p class="post-meta">Jul 16, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-tax-brain-python-api">
-    Demo Day: Using the TaxBrain Python API
-    </a>
-</h3><p class="post-meta-description">A programmatic interface to compute the impact of tax reform.</p><p class="post-meta">Jun 14, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/demo-day-jupyter-book-deploy">
-    Demo Day: Updating Jupyter Book documentation with GitHub Actions
-    </a>
-</h3><p class="post-meta-description">How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow.</p><p class="post-meta">May 17, 2021</p>
-</li></ul>
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Policy Simulation Library Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">PSL Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/PSLmodels"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/PSLmodels"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Policy Simulation Library Blog</h1>
+                      </div>
+  </div>
     
-      <div class="pager">
-        <ul class="pagination">
-          <li><div class="pager-edge">•</div></li>
-          <li><div class="current-page">1</div></li>
-          <li><a href="/page2/" class="next-page">2</a></li>
-        </ul>
-      </div></div>
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(27)</span></div><div class="category" data-category="GH-actions">GH-actions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="OG-USA">OG-USA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PSL">PSL <span class="quarto-category-count">(3)</span></div><div class="category" data-category="PSL-Foundation">PSL-Foundation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tax-Calculator">Tax-Calculator <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Workshop">Workshop <span class="quarto-category-count">(1)</span></div><div class="category" data-category="announcements">announcements <span class="quarto-category-count">(1)</span></div><div class="category" data-category="apps">apps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="benefits">benefits <span class="quarto-category-count">(2)</span></div><div class="category" data-category="business-taxation">business-taxation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="compute-studio">compute-studio <span class="quarto-category-count">(2)</span></div><div class="category" data-category="corporate-income-tax">corporate-income-tax <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cost-of-capital-calculator">cost-of-capital-calculator <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-fusion">data-fusion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="demo-days">demo-days <span class="quarto-category-count">(21)</span></div><div class="category" data-category="documentation">documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="getting-started">getting-started <span class="quarto-category-count">(1)</span></div><div class="category" data-category="git">git <span class="quarto-category-count">(2)</span></div><div class="category" data-category="github">github <span class="quarto-category-count">(2)</span></div><div class="category" data-category="individual-income-tax">individual-income-tax <span class="quarto-category-count">(4)</span></div><div class="category" data-category="jupyter-book">jupyter-book <span class="quarto-category-count">(1)</span></div><div class="category" data-category="macroeconomics">macroeconomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="microdf">microdf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="open-source">open-source <span class="quarto-category-count">(1)</span></div><div class="category" data-category="overlapping-generations">overlapping-generations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="policy-simulation-library">policy-simulation-library <span class="quarto-category-count">(2)</span></div><div class="category" data-category="psl">psl <span class="quarto-category-count">(4)</span></div><div class="category" data-category="psl-foundation">psl-foundation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="scf">scf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="synthimpute">synthimpute <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tax">tax <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tax-brain">tax-brain <span class="quarto-category-count">(3)</span></div><div class="category" data-category="tax-calculator">tax-calculator <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tax-cruncher">tax-cruncher <span class="quarto-category-count">(1)</span></div><div class="category" data-category="taxes">taxes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="unit-testing">unit-testing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="us">us <span class="quarto-category-count">(5)</span></div><div class="category" data-category="workflow">workflow <span class="quarto-category-count">(1)</span></div></div></div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="psl,psl-foundation" data-listing-date-sort="1703721600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="633">
+<div class="thumbnail">
+<p><a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external"></a></p><a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external">
+<p><img src="https://pslmodels.org/imgs/PSL.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external">2023: A year in review</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('psl'); return false;">
+psl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('psl-foundation'); return false;">
+psl-foundation
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external">Highlights from the Policy Simulation Library in 2023.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-12-28-2023-year-in-review.html" class="no-external">
+<div class="listing-date">
+Dec 28, 2023
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="psl,psl-foundation" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="465">
+<div class="thumbnail">
+<p><a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external"></a></p><a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external">
+<p><img src="https://pslmodels.org/imgs/PSL.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external">2022: A year in review</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('psl'); return false;">
+psl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('psl-foundation'); return false;">
+psl-foundation
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external">Highlights from the Policy Simulation Library in 2022.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-12-31-2022-year-in-review.html" class="no-external">
+<div class="listing-date">
+Dec 31, 2022
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="demo-days,benefits,us" data-listing-date-sort="1657756800000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
+<div class="thumbnail">
+<p><a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external"></a></p><a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external">Demo Day: How does targeted cash assistance affect incentives to work?</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('benefits'); return false;">
+benefits
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('us'); return false;">
+us
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external">How a proposed program in Cambridge, Massachusetts would affect poverty and incentives.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-07-14-demo-day-cambridge-cash-assistance.html" class="no-external">
+<div class="listing-date">
+Jul 14, 2022
+</div>
+<div class="listing-author">
+Max Ghenis
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="demo-days,github,git,workflow,getting-started" data-listing-date-sort="1656374400000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="437">
+<div class="thumbnail">
+<p><a href="./posts/2022-06-28-demo-day-github.html" class="no-external"></a></p><a href="./posts/2022-06-28-demo-day-github.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2022-06-28-demo-day-github.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-06-28-demo-day-github.html" class="no-external">Demo Day: Getting Started with GitHub</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-06-28-demo-day-github.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('github'); return false;">
+github
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
+git
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('workflow'); return false;">
+workflow
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('getting-started'); return false;">
+getting-started
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-06-28-demo-day-github.html" class="no-external">The basics of forking and cloning repositories and working on branches.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-06-28-demo-day-github.html" class="no-external">
+<div class="listing-date">
+Jun 28, 2022
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="demo-days,cost-of-capital-calculator,business-taxation,corporate-income-tax,taxes" data-listing-date-sort="1650240000000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<div class="thumbnail">
+<p><a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external"></a></p><a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external">Demo Day: Analyzing tax competitiveness with Cost-of-Capital-Calculator</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cost-of-capital-calculator'); return false;">
+cost-of-capital-calculator
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('business-taxation'); return false;">
+business-taxation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('corporate-income-tax'); return false;">
+corporate-income-tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('taxes'); return false;">
+taxes
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external">Using Cost-of-Capital-Calculator with data on international business tax policies.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-04-18-demo-day-ccc-international.html" class="no-external">
+<div class="listing-date">
+Apr 18, 2022
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="demo-days,apps,taxes,benefits,us" data-listing-date-sort="1649721600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
+<div class="thumbnail">
+<p><a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external"></a></p><a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external">Demo Day: Modeling taxes and benefits with the PolicyEngine US web app</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('apps'); return false;">
+apps
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('taxes'); return false;">
+taxes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('benefits'); return false;">
+benefits
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('us'); return false;">
+us
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external">PolicyEngine US is a new web app for computing the impact of US tax and benefit policy.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-04-12-demo-day-policyengine-us.html" class="no-external">
+<div class="listing-date">
+Apr 12, 2022
+</div>
+<div class="listing-author">
+Max Ghenis
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="PSL,PSL-Foundation,Workshop" data-listing-date-sort="1646265600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="281">
+<div class="thumbnail">
+<p><a href="./posts/2022-03-03-DC-workshop.html" class="no-external"></a></p><a href="./posts/2022-03-03-DC-workshop.html" class="no-external">
+<p><img src="./images/MLK_Library_cut2.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-03-03-DC-workshop.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-03-03-DC-workshop.html" class="no-external">Policy Simulation Library DC Workshop: Open source tools for analyzing tax policy</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2022-03-03-DC-workshop.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('PSL'); return false;">
+PSL
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PSL-Foundation'); return false;">
+PSL-Foundation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Workshop'); return false;">
+Workshop
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2022-03-03-DC-workshop.html" class="no-external">Washington, DC open-source modeling workshop, March 25, 2022, 8:30am-1:00pm, Martin Luther King, Jr.&nbsp;Memorial Library.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-03-03-DC-workshop.html" class="no-external">
+<div class="listing-date">
+Mar 3, 2022
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="psl,psl-foundation" data-listing-date-sort="1640649600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="482">
+<div class="thumbnail">
+<p><a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external"></a></p><a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external">
+<p><img src="https://pslmodels.org/imgs/PSL.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external">2021: A year in review</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('psl'); return false;">
+psl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('psl-foundation'); return false;">
+psl-foundation
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external">Highlights from the Policy Simulation Library in 2021.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-12-28-2021-year-in-review.html" class="no-external">
+<div class="listing-date">
+Dec 28, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="demo-days,python,data-fusion,synthimpute" data-listing-date-sort="1638921600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="468">
+<div class="thumbnail">
+<p><a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external"></a></p><a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external">Demo Day: Using synthimpute for data fusion</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data-fusion'); return false;">
+data-fusion
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('synthimpute'); return false;">
+synthimpute
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external">The synthimpute Python package fuses and synthesizes economic datasets with machine learning.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-12-08-demo-day-synthimpute.html" class="no-external">
+<div class="listing-date">
+Dec 8, 2021
+</div>
+<div class="listing-author">
+Max Ghenis
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="demo-days,python,macroeconomics,overlapping-generations" data-listing-date-sort="1635724800000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="388">
+<div class="thumbnail">
+<p><a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external"></a></p><a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external">Demo Day: The OG-Core platform</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('macroeconomics'); return false;">
+macroeconomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('overlapping-generations'); return false;">
+overlapping-generations
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external">A Python platform for building country-specific overlapping generations general equilibrium models.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-11-01-demo-day-og-core.html" class="no-external">
+<div class="listing-date">
+Nov 1, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="demo-days,policy-simulation-library,compute-studio" data-listing-date-sort="1632096000000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="558">
+<div class="thumbnail">
+<p><a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external"></a></p><a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external">
+<p class="card-img-top"><img src="images/cs-auto-deploy/publish_page.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external">Demo Day: Deploying apps on Compute Studio</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('policy-simulation-library'); return false;">
+policy-simulation-library
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('compute-studio'); return false;">
+compute-studio
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external">How to deploy apps on Compute Studio using the new automated deployments feature.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-09-20-demo-day-cs-auto-deploy.html" class="no-external">
+<div class="listing-date">
+Sep 20, 2021
+</div>
+<div class="listing-author">
+Hank Doupe
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="demo-days,R,Python,unit-testing" data-listing-date-sort="1628467200000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="624">
+<div class="thumbnail">
+<p><a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external"></a></p><a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external">Demo Day: Unit testing for open source projects</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('unit-testing'); return false;">
+unit-testing
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external">How to ensure that individual functions do what you expect.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-08-09-demo-day-unit-testing.html" class="no-external">
+<div class="listing-date">
+Aug 9, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="demo-days,tax,data,us" data-listing-date-sort="1626393600000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="308">
+<div class="thumbnail">
+<p><a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external"></a></p><a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external">Demo Day: Constructing tax data for the 50 states</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax'); return false;">
+tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data'); return false;">
+data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('us'); return false;">
+us
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external">A new dataset to facilitate state-level analysis of federal tax reforms.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-07-16-demo-day-constructing-tax-data-for-the-50-states.html" class="no-external">
+<div class="listing-date">
+Jul 16, 2021
+</div>
+<div class="listing-author">
+Don Boyd
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="demo-days,individual-income-tax,tax-brain,tax-calculator" data-listing-date-sort="1623628800000" data-listing-file-modified-sort="1709693948229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<div class="thumbnail">
+<p><a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external"></a></p><a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external">
+<p class="card-img-top"><img src="images/biden_volcano.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external">Demo Day: Using the TaxBrain Python API</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('individual-income-tax'); return false;">
+individual-income-tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-brain'); return false;">
+tax-brain
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-calculator'); return false;">
+tax-calculator
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external">A programmatic interface to compute the impact of tax reform.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-06-14-demo-day-tax-brain-python-api.html" class="no-external">
+<div class="listing-date">
+Jun 14, 2021
+</div>
+<div class="listing-author">
+Anderson Frailey
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="demo-days,jupyter-book,GH-actions,documentation" data-listing-date-sort="1621209600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="973">
+<div class="thumbnail">
+<p><a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external"></a></p><a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external">Demo Day: Updating Jupyter Book documentation with GitHub Actions</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('jupyter-book'); return false;">
+jupyter-book
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('GH-actions'); return false;">
+GH-actions
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('documentation'); return false;">
+documentation
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external">How to keep interactive programmatic notebook-based documentation up-to-date in your pull request workflow.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-05-17-demo-day-jupyter-book-deploy.html" class="no-external">
+<div class="listing-date">
+May 17, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="demo-days,individual-income-tax,tax-brain,tax-calculator" data-listing-date-sort="1617580800000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="798">
+<div class="thumbnail">
+<p><a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external"></a></p><a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external">Demo Day: Producing stacked revenue estimates with the Tax-Calculator Python API</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('individual-income-tax'); return false;">
+individual-income-tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-brain'); return false;">
+tax-brain
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-calculator'); return false;">
+tax-calculator
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external">How to evaluate the cumulative effects of a multi-part tax reform.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-04-05-demo-day-stacked-revenue-estimates.html" class="no-external">
+<div class="listing-date">
+Apr 5, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="demo-days,PSL" data-listing-date-sort="1615161600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<div class="thumbnail">
+<p><a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external"></a></p><a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external">Demo Day: Stitching together apps on Compute Studio</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PSL'); return false;">
+PSL
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external">Creating an app with the Compute Studio API.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-03-08-demo-day-cs-api-stitch.html" class="no-external">
+<div class="listing-date">
+Mar 8, 2021
+</div>
+<div class="listing-author">
+Hank Doupe
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="demo-days" data-listing-date-sort="1614643200000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="thumbnail">
+<p><a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external"></a></p><a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external">Demo Day: Moving policy reform files from Tax-Brain to Tax-Cruncher</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external">How to move reforms between a tax-unit-level and society-wide model with the Compute.Studio API.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-03-02-demo-day-taxbrain-to-taxcruncher.html" class="no-external">
+<div class="listing-date">
+Mar 2, 2021
+</div>
+<div class="listing-author">
+Matt Jensen
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="demo-days,PSL,git,github" data-listing-date-sort="1614643200000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
+<div class="thumbnail">
+<p><a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external"></a></p><a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external">Demo Day: Contributing to PSL projects</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PSL'); return false;">
+PSL
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
+git
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('github'); return false;">
+github
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external">How to help software projects in the Policy Simulation Library.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-03-02-demo-day-contributing-psl.html" class="no-external">
+<div class="listing-date">
+Mar 2, 2021
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="demo-days,microdf,scf" data-listing-date-sort="1611878400000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
+<div class="thumbnail">
+<p><a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external"></a></p><a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external">Demo Day: Running the scf and microdf Python packages in Google Colab</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('microdf'); return false;">
+microdf
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('scf'); return false;">
+scf
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external">Analyzing US wealth data in a web-based Python notebook.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-01-29-demo-day-scf-microdf.html" class="no-external">
+<div class="listing-date">
+Jan 29, 2021
+</div>
+<div class="listing-author">
+Max Ghenis
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="demo-days,OG-USA,Tax-Calculator,open-source,policy-simulation-library,compute-studio,us" data-listing-date-sort="1611792000000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1332">
+<div class="thumbnail">
+<p><a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external"></a></p><a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external">
+<p><img src="./images/OG-USA_logo_long.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external">Demo Day: The OG-USA macroeconomic model of U.S. fiscal policy</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('OG-USA'); return false;">
+OG-USA
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Tax-Calculator'); return false;">
+Tax-Calculator
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('open-source'); return false;">
+open-source
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('policy-simulation-library'); return false;">
+policy-simulation-library
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('compute-studio'); return false;">
+compute-studio
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('us'); return false;">
+us
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external">How to model the macroeconomic effects of tax reform with a web app.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2021-01-28-demo-day-how-to-use-og-usa.html" class="no-external">
+<div class="listing-date">
+Jan 28, 2021
+</div>
+<div class="listing-author">
+Richard W. Evans
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="demo-days,individual-income-tax,tax-brain,us" data-listing-date-sort="1608681600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
+<div class="thumbnail">
+<p><a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external"></a></p><a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external">Demo Day: Tax-Brain</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('individual-income-tax'); return false;">
+individual-income-tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-brain'); return false;">
+tax-brain
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('us'); return false;">
+us
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external">Computing the impact of US tax reform with the Tax-Brain web-app.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-12-23-demo-day-tax-brain.html" class="no-external">
+<div class="listing-date">
+Dec 23, 2020
+</div>
+<div class="listing-author">
+Anderson Frailey
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="psl,psl-foundation" data-listing-date-sort="1608681600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
+<div class="thumbnail">
+<p><a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external"></a></p><a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external">
+<p><img src="https://pslmodels.org/imgs/PSL.svg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external">2020: A year in review</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('psl'); return false;">
+psl
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('psl-foundation'); return false;">
+psl-foundation
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external">Highlights from the Policy Simulation Library in 2020.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-12-23-2020-year-in-review.html" class="no-external">
+<div class="listing-date">
+Dec 23, 2020
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="demo-days,cost-of-capital-calculator,business-taxation,corporate-income-tax" data-listing-date-sort="1606953600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345">
+<div class="thumbnail">
+<p><a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external"></a></p><a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external">Demo Day: Cost-of-Capital-Calculator Web Application</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cost-of-capital-calculator'); return false;">
+cost-of-capital-calculator
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('business-taxation'); return false;">
+business-taxation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('corporate-income-tax'); return false;">
+corporate-income-tax
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external">Computing the impact of taxes on business investment incentives under alternative policy scenarios.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-12-03-demo-day-cost-of-capital-calculator.html" class="no-external">
+<div class="listing-date">
+Dec 3, 2020
+</div>
+<div class="listing-author">
+Jason DeBacker
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="demo-days,individual-income-tax,tax-cruncher" data-listing-date-sort="1606089600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<div class="thumbnail">
+<p><a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external"></a></p><a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external">Demo Day: Tax-Cruncher</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('individual-income-tax'); return false;">
+individual-income-tax
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tax-cruncher'); return false;">
+tax-cruncher
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external">How to calculate a taxpayer’s liabilities under current law and under a policy reform.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-11-23-demo-day-tax-cruncher.html" class="no-external">
+<div class="listing-date">
+Nov 23, 2020
+</div>
+<div class="listing-author">
+Peter Metz
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="demo-days" data-listing-date-sort="1605657600000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<div class="thumbnail">
+<p><a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external"></a></p><a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external">Demo Day: Building policy reform files</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('demo-days'); return false;">
+demo-days
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external">The first in Policy Simulation Library’s new live demo series describes specifying tax reforms.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-11-18-demo-day-creating-reform-files.html" class="no-external">
+<div class="listing-date">
+Nov 18, 2020
+</div>
+<div class="listing-author">
+Matt Jensen
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="announcements" data-listing-date-sort="1604620800000" data-listing-file-modified-sort="1709693948225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="130">
+<div class="thumbnail">
+<p><a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external"></a></p><a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external">Introducing the PSL Blog</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('announcements'); return false;">
+announcements
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external">A new way to follow models in the Policy Simulation Library catalog.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2020-11-06-introducing-psl-blog.html" class="no-external">
+<div class="listing-date">
+Nov 6, 2020
+</div>
+<div class="listing-author">
+Max Ghenis
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/PSLmodels\.github\.io\/blog\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

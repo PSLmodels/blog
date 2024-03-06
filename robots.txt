@@ -1,1 +1,1 @@
-Sitemap: https://blog.pslmodels.org/sitemap.xml
+Sitemap: https://PSLmodels.github.io/blog/sitemap.xml
