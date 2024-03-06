@@ -1,5 +1,5 @@
 ---
-title: "PSL Blog"
+title: "Policy Simulation Library Blog"
 listing:
   contents: posts
   sort: "date desc"
